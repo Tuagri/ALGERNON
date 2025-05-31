@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+          <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3DRVQQ880"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3DRVQQ880');
+  </script>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALGERNON</title>
+  <link rel="stylesheet" href="the friends we made along the way.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  toggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+</script>
+
+
+<body>
+
+  <header>
+    <div class="header-top">
+    <div class="logo">ALGERNON</div>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    </div>
+    </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#explore-topics">Explore</a>
+        <a href="index.html#recent-articles">Recent</a>
+        <!--
+        <a href="fml.html#popular-articles">Popular</a>
+        -->
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="contacto">Contact</a>
+      </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2 class="background-article-title">what do you want to learn about?</h2>
+      <div class="featured-articles hero-grid">
+        <!-- 6 featured-card elements -->
+        <div class="featured-card">
+          <img src="small_cover.png" alt="Brain">
+          <div>
+            <a class="article-title" href="small.html" target="_blank">What is the tiniest thing?</a>
+            <div class="article-summary">You’ve heard of atoms—maybe even electrons or neutrinos. But is that where it ends, do things get even smaller?</div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <img src="fw_cover.png" alt="Quantum">
+          <div>
+            <a class="article-title" href="free-will.html" target="_blank">Is there Free Will??</a>
+            <div class="article-summary">Are you gonna choose to read this article, or is it already decided? Learn about a new way to understand life.</div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <img src="evo_cover.png" alt="Cosmos">
+          <div>
+          <a class="article-title" href="evolution.html" target="_blank" >What is Evolution?</a>
+          <div class="article-summary">You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Explore Topics Section -->
+  <section id="explore-topics">
+    <h3 class="explore-heading">Explore</h3>
+    <div class="articles explore-section">
+      <div class="article">
+        <a class="article-title" href="neuroscience.html" target="_blank">Neuroscience</a>
+        <div class="article-summary">Dive into the brain's inner workings and unlock the mysteries of consciousness.</div>
+      </div>
+      <div class="article">
+        <a class="article-title" href="quant.html" target="_blank">Quantum Theory</a>
+        <div class="article-summary">Understand the weird and wild principles that govern our universe at tiny scales.</div>
+      </div>
+      <div class="article">
+        <a class="article-title" href="cosm.html" target="_blank">Cosmology</a>
+        <div class="article-summary">Discover how the universe began, what it's made of, and where it's going.</div>
+      </div>
+      <div class="article">
+        <a class="article-title" href="philo.html" target="_blank">Philosophy</a>
+        <div class="article-summary">Learn about new ideas that shape our understanding of life and scienece.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Most Recent Articles Section -->
+  <section id="recent-articles">
+    <h3 class="recent-heading">Essentials</h3>
+    <div class="article-list recent-section">
+      <div class="article-card">
+        <img src="evo_cover.png" alt="Dark Matter">
+        <div>
+          <a class="article-title" href="evolution.html">What is Evolution?</a>
+          <div class="article-summary">You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</div>
+        </div>
+      </div>
+      <div class="article-card">
+        <img src="small_cover.png" alt="Neural Lace">
+        <div>
+          <a class="article-title" href="small.html" target="_blank">What is the tiniest thing?</a>
+          <div class="article-summary">You’ve heard of atoms—maybe even electrons or neutrinos. But is that where it ends? Nope, things get even smaller!</div>
+        </div>
+      </div>
+      <div class="article-card">
+        <img src="fw_cover.png" alt="AI Diagnosis">
+        <div>
+          <a class="article-title" href="free-will.html" target="_blank">Is there Free Will?</a>
+          <div class="article-summary">Are you gonna choose to read this article, or is it already decided? Learn about a new way to understand life and everything happening around you. </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Most Popular Articles Section 
+  <section id="popular-articles">
+    <h3 class="popular-heading">Most Popular Articles</h3>
+    <div class="article-list popular-section">
+      <div class="article-card">
+        <img src="https://i.imgur.com/1qb8f0S.png" alt="Entanglement">
+        <div>
+          <a class="article-title" href="https://example.com/entanglement" target="_blank">Is there Free Will??</a>
+          <div class="article-summary">Are you gonna choose to read this article, or is it already decided? Learn about a new way to understand life and everything happening around you. </div>
+        </div>
+      </div>
+      <div class="article-card">
+        <img src="https://i.imgur.com/1qb8f0S.png" alt="Time Travel">
+        <div>
+          <a class="article-title" href="https://example.com/time-travel" target="_blank">What is Evolution?</a>
+          <div class="article-summary">You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</div>
+        </div>
+      </div>
+      <div class="article-card">
+        <img src="https://i.imgur.com/1qb8f0S.png" alt="Super AI">
+        <div>
+          <a class="article-title" href="https://example.com/super-ai" target="_blank">What is the tiniest thing</a>
+          <div class="article-summary">Are you gonna choose to read this article, or is it already decided? Learn about a new way to understand life and everything happening around you. </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  -->
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <h3>About</h3>
+        <div class="about-container">
+          <p> My name is Tuana, and I’m currently majoring in neuroscience. I’ve realized that I’m much more engaged with learning when I know I’ll be sharing what I learn with others. So, I created this website to help myself do what I like more effectively.  </p>
+          <p> I am majoring in neuroscience because I am interested in intelligence and creativity. I think even the problems that seem impossible to resolve can be resolved with a little bit of spark—and that fascinates me. I don’t know what creates that spark or how it can be achieved, but I know knowing more definitely helps it. So, here is a website that helps you and me start from somewhere. </p> 
+          <p> The main goal with this project is to spread core scientific knowledge that everyone should know. I believe that even topics that seem unrelated to everyday life can offer new perspectives on the most ordinary things. With this idea in mind, I believe gaining general knowledge matters more than most people realize. So, I wanted this website to be a place where people can explore seemingly unrelated topics that spark curiosity and might just change how the world is seen. </p>
+          <p> Whether you're just curious or deeply passionate about science, I hope you find something here that you will remember later.  </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <h3>Contact</h3>
+      <p>Questions? Shoot! Corrections? Tell Me NOW!</p>
+      <p>
+        <a>Email:</a>
+        <a href="mailto:site.algernon@gmail.com" class="email-link">site.algernon@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 ALGERNON By Tuagri
+  </footer>
+
+  <script src="tf.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+          <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3DRVQQ880"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3DRVQQ880');
+  </script>
+
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALGERNON</title>
+  <link rel="stylesheet" href="the friends we made along the way.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  toggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+
+  window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
+  });
+
+</script>
+
+
+<body>
+
+  <header>
+    <div class="header-top">
+    <a href="index.html" class="logo">ALGERNON</a>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    </div>
+    </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#explore-topics">Explore</a>
+        <a href="index.html#recent-articles">Recent</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="contacto">Contact</a>
+      </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2 class="background-article-title">Start from somewhere</h2> 
+      <div class="featured-articles hero-grid">
+        <!-- 6 featured-card elements -->
+
+        <a href="gender.html" style="text-decoration: none; color: inherit;">
+        <div class="featured-card">
+          <img src="gender_cover.png" alt="Gender and Sex">
+            <p clas="article-title">How many sexes are there?</p>
+            <div class="article-summary">Unsure of the answer? Here's a scientific and sociological explanation to help you form an informed opinion.</div>
+        </div>
+        </a>
+
+
+        <a href="god.html" style="text-decoration: none; color: inherit;">
+        <div class="featured-card">
+          <img src="god_cover.png" alt="Theism">
+            <p class="article-title">Are There Reasons Not to Believe in God?</p>
+            <div class="article-summary">Yes, there are some. Learn about arguments against theism.</div>
+        </div>
+        </a>
+
+
+        <a href="evolution.html" style="text-decoration: none; color: inherit;">
+        <div class="featured-card">
+          <img src="evo_cover.png" alt="Cosmos">
+          <p class="article-title">Proving Evolution</p>
+          <div class="article-summary">You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</div>
+        </div>
+        </a>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Explore Topics Section -->
+  <section id="explore-topics">
+    <h3 class="explore-heading">Explore</h3>
+    <div class="articles explore-section">
+
+    <a href="neuroscience.html" style="text-decoration: none; color: inherit;">
+      <div class="article">
+        <p class="article-title">Neuroscience</p>
+        <div class="article-summary">Dive into the brain's inner workings and unlock the mysteries of consciousness.</div>
+      </div>
+    </a>
+
+
+    <a href="quant.html" style="text-decoration: none; color: inherit;">
+      <div class="article">
+        <p class="article-title">Physics</p>
+        <div class="article-summary">Understand the weird and wild principles that govern our universe.</div>
+      </div>
+    </a>
+
+    <a href="cosm.html" style="text-decoration: none; color: inherit;">
+      <div class="article">
+        <p class="article-title">Sociopolitics</p>
+        <div class="article-summary">Learn about the ideas and terms that affect your life without you knowing.</div>
+      </div>
+    </a>
+
+    <a href="philo.html" style="text-decoration: none; color: inherit;">
+      <div class="article">
+        <p class="article-title">Philosophy</p>
+        <div class="article-summary">Understand the perspectives that shape our understanding of life and science.</div>
+      </div>
+    </a>
+
+
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Most Recent Articles Section -->
+  <section id="recent-articles">
+    <h3 class="recent-heading">Recent Articles</h3>
+    <div class="article-list recent-section">
+
+    <a href="evolution.html" style="text-decoration: none; color: inherit;">
+      <div class="article-card">
+        <img src="evo_cover.png" alt="Dark Matter">
+          <p class="article-title">What is Evolution?</p>
+          <div class="article-summary">You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</div>
+      </div>
+    </a>
+
+
+    <a href="small.html" style="text-decoration: none; color: inherit;">
+      <div class="article-card">
+        <img src="small_cover.png" alt="Neural Lace">
+          <p class="article-title">How Small Can Things Get?</p>
+          <div class="article-summary">You’ve heard of atoms—maybe even electrons or neutrinos. But is that where it ends, do things get even smaller?</div>
+      </div>
+    </a>
+
+
+    <a href="free-will.html" style="text-decoration: none; color: inherit;">
+      <div class="article-card">
+        <img src="fw_cover.png" alt="AI Diagnosis">
+          <p class="article-title">Is there Free Will?</p>
+          <div class="article-summary">Are you going to choose to read this article, or is it already decided? Learn about a new way to understand life and everything happening around you. </div>
+      </div>
+    </a>
+
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <h3>About</h3>
+        <div class="about-container">
+          <p> My name is Tuana. I’ve realized that I’m much more engaged with learning when I know I’ll be sharing what I learn with others. So, I created this website to help myself do what I like more effectively.  </p>
+          <p> I am currently majoring in neuroscience because I am interested in intelligence and creativity. I think even the problems that seem impossible to resolve can be resolved with a little bit of spark—and that fascinates me. I don’t know what creates that spark or how it can be achieved, but I know, knowing more definitely helps. So, here is a website that helps you and me start from somewhere. </p> 
+          <p> The main goal with this project is to spread core scientific knowledge that everyone should know. I believe that even topics that seem unrelated to everyday life can offer new perspectives on the most ordinary things. So, I wanted this website to be a place where people can explore seemingly unrelated topics that spark curiosity and might just change how they see the world.</p>
+          <p> Whether you're just curious or deeply passionate about science, I hope you will find something here that you will remember later.  </p>
+          <p>One last thing: no sentences on this website are AI generated. I only use AI to fix my grammar, not to create content. This will be obvious to you once you read an article, they’re definitely not perfect.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <h3>Contact</h3>
+      <p>Questions? Shoot! Corrections? Tell Me NOW!</p>
+      <p>
+        <a>Email:</a>
+        <a href="mailto:site.algernon@gmail.com" class="email-link">site.algernon@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 ALGERNON By Tuagri
+  </footer>
+
+  <script src="tf.js"></script>
+
+</body>
+</html>

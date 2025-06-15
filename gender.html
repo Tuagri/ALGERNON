@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+          <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3DRVQQ880"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3DRVQQ880');
+  </script>
+  
+  <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Many Sexes Are There?| ALGERNON</title>
+  <script src="tf.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap');
+
+    :root {
+      --bg: #f5f5f5;
+      --text: #222;
+      --card-bg: #ffffff;
+      --meta: #666;
+      --accent: #00796b;
+      --header-bg: #ffffff;
+      --deneme: white;
+      --footer-bg: #ececec;
+    }
+
+    body.dark-theme {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --card-bg: #1f1f1f;
+      --meta: #aaa;
+      --accent: #26A69A;
+      --deneme: black;
+      --header-bg: #000;
+      --footer-bg: #0f0f0f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+      visibility: hidden;
+    }
+  
+
+
+    header {
+    background: var(--header-bg);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0.1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-content h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .logo {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+    nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--accent);
+  }
+
+    #theme-toggle {
+      background-color: var(--accent);
+      color: var(--deneme);
+      border: none;
+      padding: 0.5rem;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    #theme-toggle:hover {
+      background-color: #0b6057;
+      transform: scale(1.05);
+    }
+
+    .hero-banner {
+      background: linear-gradient(to right, #004d45, #002d27);
+      color: white;
+      text-align: center;
+      padding: 9rem 0 3rem;
+    }
+
+    .hero-banner h1 {
+      font-size: 2.8rem;
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    body, p{
+      font-family: 'Inter', sans-serif;
+    }
+
+
+    main.article-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 4rem 12rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .article-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .article-intro p{
+      padding: 0 10% 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .article-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .article-summary {
+      font-size: 1.2rem;
+      color: var(--meta);
+      margin-bottom: 2rem;
+    }
+
+    .article-meta {
+      font-size: 0.95rem;
+      color: var(--meta);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-body {
+      font-size: 1.1rem;
+      text-align: justify;
+      max-width: 90ch;
+      margin: 0 auto;
+    }
+
+    .article-body p {
+      margin-bottom: 1.6rem;
+      text-align: justify;
+    }
+
+    .article-body figure {
+      margin: 3rem auto;
+      text-align: center;
+    }
+
+    .special_image{
+      height: 40rem !important;
+    }
+
+    .article-body img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+    }
+
+
+    .article-body figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--meta);
+      font-style: italic;
+    }
+
+    .more-articles {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 3rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .more-articles h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .more-articles .card {
+      margin-bottom: 2rem;
+    }
+
+    .more-articles .card a {
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .more-articles .card a:hover {
+      text-decoration: underline;
+    }
+
+    .more-articles .card p {
+      color: var(--meta);
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: var(--meta);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero-banner h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      nav a, #theme-toggle {
+        font-size: 0.9rem;
+      }
+
+      main.article-container, .more-articles {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+    }
+
+    body.loaded {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    /* Mobile Nav Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+  button {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    padding: 0.4rem;
+  }
+
+  .resources {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    text-decoration: underline;
+    }
+
+    .resources:hover{
+    color: #26A69A;
+    }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--card-bg);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--meta);
+    gap: 1rem;
+    z-index: 1001;
+  }
+
+  nav.active {
+    display: flex;
+    animation: fadeInDown 0.3s ease forwards;
+  }
+
+  nav a, #theme-toggle {
+    font-size: 1.1rem;
+    padding: 0.4rem 0;
+    padding-left: 1rem;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    border-bottom: 1px solid var(--footer-bg);
+  }
+
+  nav a:last-child,
+  #theme-toggle:last-child {
+    border-bottom: none;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">ALGERNON</a>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#explore-topics">Explore</a>
+        <a href="index.html#recent-articles">Recent</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="contacto">Contact</a>
+      <button id="theme-toggle">Light Mode</button>
+    </nav>
+  </header>
+
+ <section class="hero-banner">
+    <h1>What is sex?</h1>
+  </section>
+
+  <main class="article-container">
+    <div class="article-intro">
+      <h2 class="article-title">What is sex and what is gender?</h2>
+      <p class="article-summary">The difference between gender and sex is not well known, but it's important to understand the difference. Mostly because, these concepts affect the lives of millions of people without you even realizing it.</p>
+
+    </div>
+    <div class="article-meta">Published June 2025</div>
+    <div class="article-body">
+
+      <figure>
+        <img src="gender_1.jpg" alt="Gender and Sex" loading="lazy" />
+        <figcaption>Different representations of being a women.</figcaption>
+      </figure>
+
+<p>Human history doesn’t have a lot of reliability in its decisions about communities. There have been groups who were discriminated against, mistreated, and oppressed for no valid reason. These include black cats, left-handed people, red-haired women, women, Black people, Jewish people, Indigenous people, the working class, disabled people, gay people, transgender people… The list would go on, probably for pages.</p>
+
+<p>These are awful events that made innocent people’s lives a living hell. There is no excuse or justification. However, we have been improving – at least in some parts of the world. This is because we have been learning and trying to understand these differences, both with science and by questioning beliefs.</p>
+
+<p>Discovering that there is no genetic superiority between races, genders, or any two groups of people has helped us a lot. Now it is possible to understand that there is no empirical evidence for discrimination.</p>
+
+<p>Even though there is improvement in understanding these differences, there are still millions of trans people who face discrimination because of their gender.</p>
+
+<p>In our article about <a href="evolution.html" target="_blank" class="resources">Evolution</a>, we mentioned how evolution can be applied to any aspect of the world. This article is about the evolution of understanding transgender people.</p>
+
+<figure>
+  <img src="gender_2.jpg" alt="Acceptance" loading="lazy" />
+  <figcaption>Two people posing, showing strong emotion and unique style.</figcaption>
+</figure>
+
+<p><h4>Why Does It Matter To Know?</h4></p>
+<p>It is important to start with some gruesome content. This is one of the best ways to convey the gravity of the problem effectively. In 1993, a 21-year-old transgender man named Brandon Teena was raped and then murdered after a group of people learned that he was transgender. In 2003, Nireah Johnson, a 17-year-old transgender girl, was killed by being burned alive in her car by Paul Moore. Ebeng Mayor, who was a transgender man, was found dead, raped, and mutilated in 2021.</p>
+
+<p>There are so many thousands more people that can be named. Yes, it is possible for anyone to be killed, not just trans people. But one thing that needs to be understood is that these people were brutally killed just because they were trans. They could have lived happily and done the things they wanted to do, but uneducated, prejudiced people prevented this.</p>
+
+<p>You may be sick of hearing these discussions about trans people and maybe think there is an exaggeration. However, there is not. These are people who try to live their one and only life, without hurting anyone and are getting unnecessary obstacles to their happiness and right to live. They are still discriminated against today, everywhere. This needs to change, and the way for this to happen is by making sure everyone learns about this issue. Furthermore, the only reason for this is that people don’t understand their perspective. So, let's give it a try and define what gender and sex are.</p>
+
+<p><h4>What Does “Sex” Refer To?</h4></p>
+<p>They can be easily confused with each other. Sex refers to the biological sex of the person, like male, female, or intersex. Gender has nothing to do with biology; it is all about social constructs and personal feelings.</p>
+
+<p>First, sex is what most people are familiar with. There are females with female biologies. They have XX chromosomes. These people grow to have ovaries and female reproductive organs. The males have XY chromosomes. Different from the X chromosome, the Y chromosome has an “SRY gene.” This gene stimulates the cells to secrete testosterone, triggering the formation of male features. In the absence of this gene, the body shows female characteristics by default.</p>
+<p><h4>What Do We Mean When We Say There Are More Than Two Sexes?</h4></p>
+<p>However, this is not how it always works. Sometimes, there is an SRY gene, but it doesn’t work. Sometimes, the SRY gene appears on an X chromosome. Sometimes, people have XXY, XO, or XYY chromosomes. Even in some cases, people may have both XX and XY chromosome sets, which is called mosaicism. There are more cases where the well-known XX or XY matching doesn’t form. In these situations, the sex trait can be expressed differently, with various emphasis on either gender.</p>
+
+<p>One thing to realize is that these differences are not a disorder. They are just not well-known because they are rarer than other combinations. People with different iterations are still healthy individuals who can function perfectly. So, if you are wondering how many sexes there are, you can say three, counting only females, males, and intersex people. Or, you can go deeper and consider all the different kinds of intersex people and say there are more than three, which I personally prefer.</p>
+
+<p>This is the detailed description of “sex.” Now, let's dig into the term “gender.”</p>
+
+      <figure>
+        <img src="gender_3.jpg" alt="Diversity" loading="lazy" />
+        <figcaption>Group of people in an event. One person carrying a LGBTQ+ flag.</figcaption>
+      </figure>
+
+<p><h4>What About Gender? It Is A Completely Different Concept.</h4></p>
+
+<p>Gender is all about social constructs. This is how society perceives men, women, girls, gender-diverse people, etc. For example, in some cultures, skirts, long eyelashes, or small waists can be characterized as feminine traits. This is an example of a gender construct. These change in every culture and from place to place, and there are so many of them.</p>
+
+<p>Because people grow up and get exposed to these gender roles from the moment of birth, it may be hard to realize or pinpoint them. These roles are not always the perfect fit for everyone. Sometimes, while someone who is biologically male may not like wearing skirts, some other males may not find any problem with this, which shows how gender is not always predictable.</p>
+
+<p>People who identify as women or men do not necessarily fit all these gender roles, but they feel somewhat comfortable in the gender constructs society has already set.</p>
+
+<p>Trans people, on the other hand, have an internal disconnection from the gender they were assigned at birth and the expectations that come with it.</p>
+
+      <figure>
+        <img src="gender_4.jpg" alt="Gender and Sex" loading="lazy" />
+        <figcaption>A young person with colorfull hair and a warm smile.</figcaption>
+      </figure>
+
+<p><h4>Understanding Others</h4></p>
+<p>It may be easy to get deceived and think that this is a choice, but changing their perspective is more like asking a person who likes the color purple to start liking the color brown more. It is just not how it works. These are people who have the courage to act like who they are against all the backlash, and they have the right, as much as everyone, to express what they are feeling.</p>
+
+<p>It is only natural for humans to be cautious about something that is rare. It was definitely a benefit when we were actively looking for societal safety during the first steps of human evolution, or when we were trying to make friends. However, it is not always the best idea to go with instinct where we could think and contemplate. We are in a new age where differences in human populations are better understood. We now don’t have to take immediate action against people that are not like us because, for the first time in history, we have the technology to understand these differences and comprehend that it is not that big of a deal. And we now know that “normal” is only a subjective word.</p>
+
+<p>To sum up, the definitions for sex and gender are insanely diverse and sometimes a bit hard to keep track of. But the good news is that you don’t have to keep track. As long as you know that there are people who identify differently, and their identification of themselves is the only thing you should consider, you are just fine.</p>
+
+
+
+    </div>
+  </main>
+
+  <section class="more-articles">
+    <h2>More Articles You Might Like</h2>
+    <div class="card">
+      <a href="free-will.html">Is There Free Will?</a>
+      <p>Are you going to choose to read this article, or is it already decided? Learn about a new way to understand life.</p>
+    </div>
+    <div class="card">
+      <a href="small.html">What Is The Tinniest Thing?</a>
+      <p>You’ve heard of atoms—maybe even electrons or neutrinos. But is that where it ends, do things get even smaller?.</p>
+    </div>
+    <div class="card">
+      <a href="evolution.html">What is Evolution?</a>
+      <p>You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</p>
+    </div>
+  </section>
+
+
+  <footer>
+    &copy; 2025 ALGERNON By Tuagri
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeToggle = document.getElementById("theme-toggle");
+      const darkClass = "dark-theme";
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.remove(darkClass);
+        themeToggle.textContent = "Dark Mode";
+      } else {
+        document.body.classList.add(darkClass);
+        themeToggle.textContent = "Light Mode";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.contains(darkClass);
+        document.body.classList.toggle(darkClass, !isDark);
+        themeToggle.textContent = isDark ? "Dark Mode" : "Light Mode";
+        localStorage.setItem("theme", isDark ? "light" : "dark");
+      });
+    });
+
+    // Hamburger menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-nav").classList.toggle("active");
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        document.getElementById("mobile-nav").classList.remove("active");
+      }
+    });
+
+
+  </script>
+</body>
+</html>

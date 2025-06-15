@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3DRVQQ880"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3DRVQQ880');
+  </script>
+        
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is Evolution? | ALGERNON</title>
+  <script src="tf.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap');
+
+    :root {
+      --bg: #f5f5f5;
+      --text: #222;
+      --card-bg: #ffffff;
+      --meta: #666;
+      --accent: #00796b;
+      --header-bg: #ffffff;
+      --deneme: white;
+      --footer-bg: #ececec;
+    }
+
+    body.dark-theme {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --card-bg: #1f1f1f;
+      --meta: #aaa;
+      --accent: #26A69A;
+      --deneme: black;
+      --header-bg: #000;
+      --footer-bg: #0f0f0f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+      visibility: hidden;
+    }
+  
+
+
+    header {
+    background: var(--header-bg);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0.1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-content h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .logo {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+    nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--accent);
+  }
+
+    #theme-toggle {
+      background-color: var(--accent);
+      color: var(--deneme);
+      border: none;
+      padding: 0.5rem;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    #theme-toggle:hover {
+      background-color: #0b6057;
+      transform: scale(1.05);
+    }
+
+    .hero-banner {
+      background: linear-gradient(to right, #004d45, #002d27);
+      color: white;
+      text-align: center;
+      padding: 9rem 0 3rem;
+    }
+
+    .hero-banner h1 {
+      font-size: 2.8rem;
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    body, p{
+      font-family: 'Inter', sans-serif;
+    }
+
+
+    main.article-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 4rem 12rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .article-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .article-intro p{
+      padding: 0 10% 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .article-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .article-summary {
+      font-size: 1.2rem;
+      color: var(--meta);
+      margin-bottom: 2rem;
+    }
+
+    .article-meta {
+      font-size: 0.95rem;
+      color: var(--meta);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-body {
+      font-size: 1.1rem;
+      text-align: justify;
+      max-width: 90ch;
+      margin: 0 auto;
+    }
+
+    .article-body p {
+      margin-bottom: 1.6rem;
+      text-align: justify;
+    }
+
+    .article-body figure {
+      margin: 3rem auto;
+      text-align: center;
+    }
+
+    .article-body img {
+      width: 100%;
+      max-height: 20rem;
+      height: 50%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .article-body figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--meta);
+      font-style: italic;
+    }
+
+    .more-articles {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 3rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .more-articles h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .more-articles .card {
+      margin-bottom: 2rem;
+    }
+
+    .more-articles .card a {
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .more-articles .card a:hover {
+      text-decoration: underline;
+    }
+
+    .more-articles .card p {
+      color: var(--meta);
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: var(--meta);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero-banner h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      nav a, #theme-toggle {
+        font-size: 0.9rem;
+      }
+
+      main.article-container, .more-articles {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+    }
+
+    body.loaded {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    /* Mobile Nav Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+  button {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    padding: 0.4rem;
+  }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--card-bg);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--meta);
+    gap: 1rem;
+    z-index: 1001;
+  }
+
+  nav.active {
+    display: flex;
+    animation: fadeInDown 0.3s ease forwards;
+  }
+
+  nav a, #theme-toggle {
+    font-size: 1.1rem;
+    padding: 0.4rem 0;
+    padding-left: 1rem;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    border-bottom: 1px solid var(--footer-bg);
+  }
+
+  nav a:last-child,
+  #theme-toggle:last-child {
+    border-bottom: none;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">ALGERNON</a>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#explore-topics">Explore</a>
+        <a href="index.html#recent-articles">Recent</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="contacto">Contact</a>
+      <button id="theme-toggle">Light Mode</button>
+    </nav>
+  </header>
+
+  <section class="hero-banner">
+    <h1>What is Evolution?</h1>
+  </section>
+
+  <main class="article-container">
+    <div class="article-intro">
+      <h2 class="article-title">A largely misunderstood concept</h2>
+      <p class="article-summary">Evolution: the accumulation of changes in the heritable characteristics of species over generations.</p>
+
+    </div>
+    <div class="article-meta">Published June 2025</div>
+    <div class="article-body">
+
+      <figure>
+        <img src="evo_dino.jpg" alt="Dark Matter Simulation" loading="lazy" />
+        <figcaption>Photograph of a dinosour fossil.</figcaption>
+      </figure>
+<p>
+But what does that actually mean? The definition might seem wordy at first, but the idea is quite simple. In the end, evolution is all about accumulation—what changes build up over time and how they occur is the focus of this article.
+</p>
+<p>
+You’ve probably heard of Charles Darwin—the great naturalist, the father of evolution. But you might not have heard of Alfred Russel Wallace, who independently proposed the idea of evolution around the same time as Darwin in the late 1800s. Historically, both men deserve equal credit for their contributions. Yet, for reasons still unclear, Darwin’s name became the more famous one.
+</p>
+<p>
+Although ideas about species change and interrelationships existed before them, Darwin and Wallace were the first to explain evolution through the concept of natural selection, which we’ll get into shortly.
+</p>
+<p>
+Since then, we’ve come a long way in accepting evolution. Today, there's overwhelming evidence—from protein analysis to fossil records—and fortunately, fewer people are giving scientists a hard time about it.
+</p>
+<p>
+Evolution is a gradual process that takes place over many years. It's not instantaneous. It involves errors on the cellular level, particularly during meiosis—a term you probably learned in school and hated.
+</p>
+<p>
+First, it’s important to understand that all organisms reproduce—with a few exceptions. There are two ways to reproduce: asexually and sexually. Asexual reproduction is simpler and uses less energy. The organism basically clones itself. There’s no difference between parent and offspring. The DNA—the genetic code of the organism—is completely identical. Unless a mutation occurs.
+</p>
+<p>
+Mutations are small, random changes in DNA that aren’t supposed to happen. Since DNA controls how we look and behave, mutations (if not silent) can affect both traits. This is how the first person with blue eyes came to be—their parents probably had brown eyes, but a mutation changed their eye color. In asexual reproduction, mutations are the only way for offspring to differ from their parents. These mutations can be caused by chemicals, radiation, or simply copying errors—think of it as the organism messing up during duplication.
+</p>
+<p>
+Sexual reproduction is the more familiar type. It's more complex but brings different benefits. It involves two individuals of the same species combining genetic material to create a unique offspring. Unlike asexual reproduction, sexual reproduction is designed to guarantee genetic diversity. Unless you have an identical twin, your DNA is one-of-a-kind and will likely never be repeated in history.
+</p>
+<p>
+Even though you inherit traits from your parents, your DNA is a unique mix of theirs, further enhanced by mutations. This allows for the development of traits not found in either parent. This might explain how Matilda of Roald Dahl ended up so smart despite having two clueless parents.
+</p>
+<p>
+Both reproduction methods cause changes between generations. Thanks to these mechanisms, we're not identical to our parents—or to our fish ancestors. But that’s just the beginning. We still need to answer: why do some traits become more common than others?
+</p>
+
+      <figure>
+        <img src="evo_butterflies.jpg" alt="Galactic Rotation" loading="lazy" />
+        <figcaption>Butterflies in the process of metamorphosis.</figcaption>
+      </figure>
+
+<p>
+Evolution is an umbrella term involving many steps. Creating diversity through change is just the first step. After a change occurs, nature “decides” whether it’s beneficial or not. This is where natural selection comes in.
+</p>
+<p>
+In the wild, organisms face various risks: climate, predators, lack of food... These pressures eliminate certain traits. For example, if a mutation causes a bird to have extremely bright feathers, it might attract predators more easily and get eaten. That trait won't get passed on, and eventually, it disappears from the gene pool. This is why you don’t see animals that jump off cliffs at birth or prey that are attracted to predators.
+</p>
+<p>
+There are also variations of natural selection, such as artificial selection. If you have a dog and it’s not a literal wolf, you’re familiar with this. Humans began breeding wolves with desirable traits like friendliness, intelligence, and cuteness. Over time, we ended up with dogs—domesticated animals that love cuddles and belly rubs, a big change from their wild, mostly dangerous ancestors.
+</p>
+<p>
+Artificial selection works similarly to natural selection, but the choices are made by humans rather than the environment.
+</p>
+<p>
+The outcome of both natural and artificial selection is the same: species with traits that help them survive and reproduce. Natural selection encourages traits that help organisms adapt to their environment. What’s fascinating is that there’s no single way to survive or adapt. That’s why we have millions of species, each solving nature’s challenges in their own way.
+</p>
+<p>
+As mentioned earlier, evolution happens step by step. One mutation isn’t “evolution.” But when you zoom out and look at the billions of mutations that have occurred over millions of years, the changes become staggering. It's like seeing your baby nephew again after 20 years—except instead of just a beard and six inches of height, he now has wings and antennae.
+</p>
+
+      <figure>
+        <img src="evo_whale.jpg" alt="Dark Matter Simulation" loading="lazy" />
+        <figcaption>A photograph of the whale skeleton showing the pentadactyl limb structure and pelvic bones.</figcaption>
+      </figure>
+
+
+<p>
+There’s a mountain of evidence supporting evolution. Selective breeding is one example. Another striking one is the skeleton of whales.
+</p>
+<p>
+According to fossil records and protein analysis, the closest land relatives of whales are hippos. That may seem hard to believe, but there are clear similarities. Hippos are semi-aquatic, spending a lot of time in water—unusual among land mammals. Whales are also mammals: warm-blooded, lung-breathing, and live-birthing. Since less than 0.1% of marine animals are mammals, this is a strong clue that whales evolved from land mammals.
+</p>
+<p>
+Hippos and whales even share similar inner ear structures, setting them apart from other marine species.
+</p>
+<p>
+Whales also have pentadactyl limbs—bone structures resembling fingers, like those in humans, bats, frogs, and birds. The existence of this structure in such different animals strongly suggests they share a common ancestor.
+</p>
+<p>
+Whales also have pelvic bones they don’t use. It’s unlikely these bones would have evolved from scratch in the ocean for no purpose. Instead, they resemble the hip bones of land mammals—more evidence that whales descended from land-dwelling ancestors.
+</p>
+<p>
+Another compelling case comes from Darwin himself: his finches. These birds, which live on the Galápagos Islands, include 18 species with drastically different beak shapes. Some have long, thin beaks; others have short, thick ones. This isn’t random. Darwin noticed the connection between beak shape and diet. Birds with long beaks ate insects hiding in cracks. Birds with thick beaks cracked hard seeds.
+</p>
+<p>
+With your understanding of evolution, you can guess what happened. The finches needed specific beak shapes to survive. If a seed-eating finch had a thin beak, it couldn’t eat and would die out. Over time, only finches with suitable beaks for their diets survived and reproduced, passing on those traits. This is natural selection at work.
+</p>
+<p>
+All these examples are direct evidence of evolution. So why do we still call it a theory?
+</p>
+<p>
+Because science is humble. The scientific method requires caution before declaring anything 100% certain. Otherwise, it would be dogma, not science. Sometimes, reaching absolute certainty is impossible. For instance, if I claimed there was a living cell on Mars, you couldn’t disprove it unless you searched the entire planet—an enormous task. It’s the same with evolution: we can’t observe every organism that ever lived, and we can’t rewind history—yet. So even though the evidence is overwhelming, we call it a “theory” because we can’t say with absolute certainty.
+</p>
+<p>
+What you should take away from all of this is that humans are one of the most extraordinary products of evolution—outcomes of a journey lasting billions of years. And if there’s one thing evolution proves, it’s that there is no such thing as luck in nature. Everything exists for a reason. And interestingly, this idea doesn’t just apply to biology. Technologies, societies, and even relationships evolve. If they don’t, they fail.
+</p>
+<p>
+So yes, that should make you a little hopeful for the future.
+</p>
+
+    </div>
+  </main>
+
+  <section class="more-articles">
+    <h2>More Articles You Might Like</h2>
+    <div class="card">
+      <a href="free-will.html">Is There Free Will?</a>
+      <p>Are you going to choose to read this article, or is it already decided? Learn about a new way to understand life.</p>
+    </div>
+    <div class="card">
+      <a href="small.html">What Is The Tinniest Thing?</a>
+      <p>You’ve heard of atoms—maybe even electrons or neutrinos. But is that where it ends, do things get even smaller?</p>
+    </div>
+    <div class="card">
+      <a href="gender.html">How Many Sexes Are There?</a>
+      <p>You dont know the answer? Here is a scientific and sociological explanation to help you make up your mind.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ALGERNON By Tuagri
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeToggle = document.getElementById("theme-toggle");
+      const darkClass = "dark-theme";
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.remove(darkClass);
+        themeToggle.textContent = "Dark Mode";
+      } else {
+        document.body.classList.add(darkClass);
+        themeToggle.textContent = "Light Mode";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.contains(darkClass);
+        document.body.classList.toggle(darkClass, !isDark);
+        themeToggle.textContent = isDark ? "Dark Mode" : "Light Mode";
+        localStorage.setItem("theme", isDark ? "light" : "dark");
+      });
+    });
+
+    // Hamburger menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-nav").classList.toggle("active");
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        document.getElementById("mobile-nav").classList.remove("active");
+      }
+    });
+
+
+  </script>
+</body>
+</html>

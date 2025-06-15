@@ -1,0 +1,323 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap');
+
+
+
+    body {
+      visibility: hidden;
+    }
+
+    .featured-card {
+      max-width: 300px;
+      width: 100%;
+    }
+    .section-divider {
+      height: 20px;
+      background-color: black;
+      width: 100%;
+      max-width: 4000px;
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+    }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+
+body.loaded {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ========== Header ========== */
+
+
+.hero-content h2{
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+
+h1, h2, h3, .logo {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+body, p, nav p {
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+
+/* ========== Section Layout ========== */
+section,
+.about,
+.contact {
+  padding: 4rem 2rem 2rem;
+  scroll-margin-top: 100px;
+}
+
+.about-container{
+  columns: 2;
+  gap: 0;
+  margin: 0 8rem;
+}
+
+.about p{
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  margin: 0 2rem;
+  text-align: justify;
+}
+
+
+
+h2, h3 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #26A69A;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  background: url("texture2.jpg") center/cover no-repeat;
+  padding: 9rem 2rem 3rem;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+}
+
+
+.hero p {
+  font-size: 1.7rem;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.hero p:hover,
+.hero p:focus {
+  color: #26A69A;
+  text-decoration: underline;
+}
+
+
+/* ========== Cards ========== */
+.article, .article-card, .featured-card {
+  background: black;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: auto;
+  max-width: 20rem;
+}
+
+.article-card,
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+.featured-card p{
+  padding-top: 0.5rem;
+}
+
+
+.article {
+  max-width: 35rem;
+}
+
+.article:hover,
+.article-card:hover,
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px #000;
+}
+
+.article-card img,
+.featured-card img {
+  width: 100%;
+  height: 200px;
+  aspect-ratio: 16 / 9; /* Or 4 / 3, depending on your desired shape */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.article-title{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: #26A69A;
+  text-decoration: none;
+}
+
+
+.article-title:hover,
+.article-title:focus {
+  text-decoration: underline;
+}
+
+.article-summary {
+  padding-top: 0.5rem;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* ========== Grids ========== */
+.article-list,
+.recent-section,
+.popular-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.recent-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch; /* Important */
+}
+
+
+.explore-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 0.5rem;
+  justify-items: center;
+}
+
+/* ========== Section Themes ========== */
+#explore-topics { background: #181818; }
+#recent-articles { background: #202020; }
+#popular-articles { background: #1a1a1a; }
+.about, .contact { background: #151515; text-align: center; }
+
+/* ========== Contact ========== */
+.email-link {
+  color: #26A69A;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.email-link:hover,
+.email-link:focus {
+  text-decoration: underline;
+}
+
+/* ========== Footer ========== */
+footer {
+  background: #0d0d0d;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    margin-top: 3rem;
+  }
+
+
+/* ========== Responsive Adjustments ========== */
+
+/* For tablets (<= 768px) */
+@media (max-width: 768px) {
+
+
+  .hero-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-container {
+    columns: 1;
+    margin: 0 2rem;
+  }
+
+  .hero-grid,
+  .explore-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For phones (<= 480px) */
+@media (max-width: 480px) {
+
+  section,
+  .about,
+  .contact {
+    padding: 3rem 1rem 1rem;
+  }
+
+  h2, h3 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding: 7rem 1rem 2rem;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .article, .article-card, .featured-card {
+    max-width: 100%;
+  }
+
+  .article-title {
+    font-size: 1.5rem;
+  }
+
+  .article-summary {
+    font-size: 0.95rem;
+  }
+
+  .hero-grid,
+  .explore-section {
+    grid-template-columns: 1fr;
+  }
+
+}
+

@@ -1,0 +1,114 @@
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    header {
+      background: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.1rem 2rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 2.7rem;
+      letter-spacing: 1px;
+      padding: 0.5rem;
+      font-weight: 700;
+      color: #26A69A;
+      font-family: 'Bebas Neue', sans-serif;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      padding: 0.7rem;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      color: #26A69A;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: #ddd;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+        z-index: 1100;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      .contacto{
+        border-bottom: 4px solid #333;
+
+      }
+
+      nav a {
+        padding-left: 1rem;
+        margin: 0%;
+        border-top: 4px solid #333;
+        width: 100%;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.5rem 1rem;
+      }
+    }
+  

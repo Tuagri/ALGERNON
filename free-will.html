@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+          <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3DRVQQ880"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3DRVQQ880');
+  </script>
+
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Does Free Will Exist? | ALGERNON</title>
+  <script src="tf.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap');
+
+    :root {
+      --bg: #f5f5f5;
+      --text: #222;
+      --card-bg: #ffffff;
+      --meta: #666;
+      --accent: #00796b;
+      --header-bg: #ffffff;
+      --deneme: white;
+      --footer-bg: #ececec;
+    }
+
+    body.dark-theme {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --card-bg: #1f1f1f;
+      --meta: #aaa;
+      --accent: #26A69A;
+      --deneme: black;
+      --header-bg: #000;
+      --footer-bg: #0f0f0f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+      visibility: hidden;
+    }
+  
+
+
+    header {
+    background: var(--header-bg);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0.1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-content h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .logo {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+    nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--accent);
+  }
+
+    #theme-toggle {
+      background-color: var(--accent);
+      color: var(--deneme);
+      border: none;
+      padding: 0.5rem;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    #theme-toggle:hover {
+      background-color: #0b6057;
+      transform: scale(1.05);
+    }
+
+    .hero-banner {
+      background: linear-gradient(to right, #004d45, #002d27);
+      color: white;
+      text-align: center;
+      padding: 9rem 0 3rem;
+    }
+
+    .hero-banner h1 {
+      font-size: 2.8rem;
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    body, p{
+      font-family: 'Inter', sans-serif;
+    }
+
+
+    main.article-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 4rem 12rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .article-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .article-intro p{
+      padding: 0 10% 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .article-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .article-summary {
+      font-size: 1.2rem;
+      color: var(--meta);
+      margin-bottom: 2rem;
+    }
+
+    .article-meta {
+      font-size: 0.95rem;
+      color: var(--meta);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-body {
+      font-size: 1.1rem;
+      text-align: justify;
+      max-width: 90ch;
+      margin: 0 auto;
+    }
+
+    .article-body p {
+      margin-bottom: 1.6rem;
+      text-align: justify;
+    }
+
+    .article-body figure {
+      margin: 3rem auto;
+      text-align: center;
+    }
+
+    .article-body img {
+      width: 100%;
+      max-height: 20rem;
+      height: 50%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .article-body figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--meta);
+      font-style: italic;
+    }
+
+    .more-articles {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 3rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .more-articles h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .more-articles .card {
+      margin-bottom: 2rem;
+    }
+
+    .more-articles .card a {
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .more-articles .card a:hover {
+      text-decoration: underline;
+    }
+
+    .more-articles .card p {
+      color: var(--meta);
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: var(--meta);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero-banner h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      nav a, #theme-toggle {
+        font-size: 0.9rem;
+      }
+
+      main.article-container, .more-articles {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+    }
+
+    body.loaded {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    /* Mobile Nav Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+  button {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    padding: 0.4rem;
+  }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--card-bg);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--meta);
+    gap: 1rem;
+    z-index: 1001;
+  }
+
+  nav.active {
+    display: flex;
+    animation: fadeInDown 0.3s ease forwards;
+  }
+
+  nav a, #theme-toggle {
+    font-size: 1.1rem;
+    padding: 0.4rem 0;
+    padding-left: 1rem;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    border-bottom: 1px solid var(--footer-bg);
+  }
+
+  nav a:last-child,
+  #theme-toggle:last-child {
+    border-bottom: none;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">ALGERNON</a>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#explore-topics">Explore</a>
+        <a href="index.html#recent-articles">Recent</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="contacto">Contact</a>
+      <button id="theme-toggle">Light Mode</button>
+    </nav>
+  </header>
+
+  <section class="hero-banner">
+    <h1>Is there free will?</h1>
+  </section>
+
+  <main class="article-container">
+    <div class="article-intro">
+      <h2 class="article-title">Why did you choose to read this article?</h2>
+      <p class="article-summary">Some philosophical questions matter—not because they give us new information, but because they help us rethink some of the most established ideas in our lives. </p>
+
+    </div>
+    <div class="article-meta">Published June 2025</div>
+    <div class="article-body">
+
+      <figure>
+        <img src="fw_choice.jpg" alt="Dark Matter Simulation" loading="lazy" />
+        <figcaption>Several closed doors, symbolizing different choices.</figcaption>
+      </figure>
+
+        <p>This article is not informative in the traditional sense, but aims to create a sense of distance between the ideas of consciousness and self. That distance may offer a useful and versatile perspective when thinking about any topic, from science to politics. The discussion of free will—even though we don’t yet have enough scientific evidence to answer it—may help you piece together diverse ideas about pre-established constructs and values.</p>
+
+        <p>One way to understand free will is to look closer into our brains. Because what we call “will” is your capability to make decisions, which happens in the brain. More specifically, your neurons. Neurons are the type of cells that form your nervous system. How these cells connect with each other, how fast, large, small, fatty they are—all determine how you think. The exact mechanism is not fully known yet, so there is some room for speculation. However, we know that this is the overall picture of how you make decisions.</p>
+
+        <p>These features of neurons are determined by two things: your genes and the environment. The part that comes from your genes has nothing to do with your own will. This is your parents’ contribution to how you behave. If they are smart, you may be prone to having a high IQ. If they are adventurous, you may like to take risks.</p>
+
+        <figure>
+            <img src="fw_human.jpg" alt="Galactic Rotation" loading="lazy" />
+            <figcaption>Photograph of a kid.</figcaption>
+        </figure>
+       
+       
+        <p>However, there is more to it. Your genes design your brain only to some extent. Environment—by environment, we mean the surroundings the person is exposed to—adds some adjustments to that machine of yours. The TV shows you watch, the behavior of your parents, the culture you are in—they are all part of the environment. All these can both change how your genes are expressed and the features of your neurons.</p>
+
+        <p>And that is it. These two things are the only two elements that form your brain. There is no space for anything that you control, because you are not capable of controlling it, as far as we know. This may be difficult to imagine because there are so many factors that affect these connections. There are so many types of genes, and one gene may affect more than one trait too. There are so SO many experiences one can have—trauma, friends, articles you read, assignments… But these things are what make everyone different. For this reason, no one is the same.</p>
+
+        <p>Neurons are malleable in so many ways, and so easily too—especially when you are a kid. So it makes sense that brains can be so different with only two factors affecting them.</p>
+
+        <figure>
+            <img src="fw_brain.jpg" alt="Galactic Rotation" loading="lazy" />
+            <figcaption>MRI scan of a brain.</figcaption>
+        </figure>
+
+        <p>However, these arguments are mostly supported by a “deterministic” approach. The main idea behind this perspective is that everything can be traced back to a prior action. Similar to how snowflakes form—tiny little changes in temperature or wind make them unique—tiny little changes in the universe create each action. With this idea, we can conclude that since the moment of the Big Bang, everything was predetermined.</p>
+
+        <p>One idea that people put forward to support the argument of free will is fueled by the probabilistic aspect of the quantum world. We know that cells are made out of molecules, molecules are made out of atoms and electrons, which are controlled by quantum physics. Maybe you know about how we can’t know where an electron is around the nucleus; we can only know the probability. This is the same logic. Since atoms and subatomic particles follow quantum rules, it's been suggested that neuron behavior might involve some probabilistic elements, but this remains a debated topic. Thus, we can go and say, all the features of a neuron are therefore determined by probabilistic actions—thus it was not determined in the moment of the Big Bang like the deterministic approach suggests. This is a valid argument, and to be honest, we don’t have enough information about the physics of the universe to make this deterministic assumption. For all we know, it could be wrong.</p>
+
+        <p>However, the idea that everything may not be predetermined does not mean you have the ability to determine them. The idea that the brain is run by probabilities does not show that you can control how you think. To me, this is more like asking a computer to make a decision. It can’t—humans that code the computer have already made all these decisions, knowingly or not, for it. Humans are also machines, but an extremely complex one. Don’t let the mystery behind these mechanisms trick you into thinking they can be controlled.</p>
+
+        <p>One final note is that these ideas are all theoretical. We don’t have any solid evidence that we have free will or not, which is why there is space for discussion. It is relatively an easy idea to understand, but it's also a bit of a discomforting one. You may feel uneasy, but you don't have to, because even if the answer is no, it doesn’t really matter.</p>
+
+
+      <figure>
+        <img src="fw_bird.jpg" alt="Galactic Rotation" loading="lazy" />
+        <figcaption>A goofy picture of a flying bird.</figcaption>
+      </figure>
+
+
+    </div>
+  </main>
+
+  <section class="more-articles">
+    <h2>More Articles You Might Like</h2>
+    <div class="card">
+      <a href="god.html">Are There Reasons Not to Believe in God?</a>
+      <p>There are some arguments that can be made against theism. See if you agree with them!</p>
+    </div>
+    <div class="card">
+      <a href="evolution.html">What is Evolution?</a>
+      <p>You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</p>
+    </div>
+    <div class="card">
+      <a href="gender.html">How Many Sexes Are There?</a>
+      <p>You dont know the answer? Here is a scientific and sociological explanation to help you make up your mind.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ALGERNON By Tuagri
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeToggle = document.getElementById("theme-toggle");
+      const darkClass = "dark-theme";
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.remove(darkClass);
+        themeToggle.textContent = "Dark Mode";
+      } else {
+        document.body.classList.add(darkClass);
+        themeToggle.textContent = "Light Mode";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.contains(darkClass);
+        document.body.classList.toggle(darkClass, !isDark);
+        themeToggle.textContent = isDark ? "Dark Mode" : "Light Mode";
+        localStorage.setItem("theme", isDark ? "light" : "dark");
+      });
+    });
+
+    // Hamburger menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-nav").classList.toggle("active");
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        document.getElementById("mobile-nav").classList.remove("active");
+      }
+    });
+
+
+  </script>
+</body>
+</html>

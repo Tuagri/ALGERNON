@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+          <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3DRVQQ880"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3DRVQQ880');
+  </script>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Small Can Things Get? | ALGERNON</title>
+  <script src="tf.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap');
+
+    :root {
+      --bg: #f5f5f5;
+      --text: #222;
+      --card-bg: #ffffff;
+      --meta: #666;
+      --accent: #00796b;
+      --header-bg: #ffffff;
+      --deneme: white;
+      --footer-bg: #ececec;
+    }
+
+    body.dark-theme {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --card-bg: #1f1f1f;
+      --meta: #aaa;
+      --accent: #26A69A;
+      --deneme: black;
+      --header-bg: #000;
+      --footer-bg: #0f0f0f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+      visibility: hidden;
+    }
+  
+
+
+    header {
+    background: var(--header-bg);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0.1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-content h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .logo {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+    nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--accent);
+  }
+
+    #theme-toggle {
+      background-color: var(--accent);
+      color: var(--deneme);
+      border: none;
+      padding: 0.5rem;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    #theme-toggle:hover {
+      background-color: #0b6057;
+      transform: scale(1.05);
+    }
+
+    .hero-banner {
+      background: linear-gradient(to right, #004d45, #002d27);
+      color: white;
+      text-align: center;
+      padding: 9rem 0 3rem;
+    }
+
+    .hero-banner h1 {
+      font-size: 2.8rem;
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    body, p{
+      font-family: 'Inter', sans-serif;
+    }
+
+
+    main.article-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 4rem 12rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .article-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .article-intro p{
+      padding: 0 10% 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .article-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .article-summary {
+      font-size: 1.2rem;
+      color: var(--meta);
+      margin-bottom: 2rem;
+    }
+
+    .article-meta {
+      font-size: 0.95rem;
+      color: var(--meta);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-body {
+      font-size: 1.1rem;
+      text-align: justify;
+      max-width: 90ch;
+      margin: 0 auto;
+    }
+
+    .article-body p {
+      margin-bottom: 1.6rem;
+      text-align: justify;
+    }
+
+    .article-body figure {
+      margin: 3rem auto;
+      text-align: center;
+    }
+
+    .special_image{
+      height: 40rem !important;
+    }
+
+    .article-body img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+    }
+
+
+    .article-body figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--meta);
+      font-style: italic;
+    }
+
+    .more-articles {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 3rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .more-articles h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .more-articles .card {
+      margin-bottom: 2rem;
+    }
+
+    .more-articles .card a {
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .more-articles .card a:hover {
+      text-decoration: underline;
+    }
+
+    .more-articles .card p {
+      color: var(--meta);
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: var(--meta);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero-banner h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      nav a, #theme-toggle {
+        font-size: 0.9rem;
+      }
+
+      main.article-container, .more-articles {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+    }
+
+    body.loaded {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    /* Mobile Nav Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+  button {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    padding: 0.4rem;
+  }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--card-bg);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--meta);
+    gap: 1rem;
+    z-index: 1001;
+  }
+
+  nav.active {
+    display: flex;
+    animation: fadeInDown 0.3s ease forwards;
+  }
+
+  nav a, #theme-toggle {
+    font-size: 1.1rem;
+    padding: 0.4rem 0;
+    padding-left: 1rem;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    border-bottom: 1px solid var(--footer-bg);
+  }
+
+  nav a:last-child,
+  #theme-toggle:last-child {
+    border-bottom: none;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">ALGERNON</a>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#explore-topics">Explore</a>
+        <a href="index.html#recent-articles">Recent</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="contacto">Contact</a>
+      <button id="theme-toggle">Light Mode</button>
+    </nav>
+  </header>
+
+ <section class="hero-banner">
+    <h1>What is the tinniest thing in the universe?</h1>
+  </section>
+
+  <main class="article-container">
+    <div class="article-intro">
+      <h2 class="article-title">What are we all composed of?</h2>
+      <p class="article-summary"> Let's think of something small—like an atom or an electron. Can you guess what might be inside these particles? </p>
+
+    </div>
+    <div class="article-meta">Published June 2025</div>
+    <div class="article-body">
+
+      <figure>
+        <img src="small_atoms.jpg" alt="Dark Matter Simulation" loading="lazy" />
+        <figcaption>A design of a molecule.</figcaption>
+      </figure>
+
+    <p>There are so many things we don’t know. What is outside the universe? What genes control intelligence? Why is it that some people don’t like cheese? Are they okay?</p>
+
+    <p>One other question we still don’t have a complete answer to has been asked many times before, and we’ve only recently started to give solid responses: What is the smallest thing? What is the fundamental thing matter is composed of—or is there even such a thing?</p>
+
+    <p>Let’s start with the basics. We know that in an atom, there is a nucleus and electrons orbiting the nucleus. You may have also heard that the name “atom” comes from a Greek word meaning indivisible. Inside this nucleus, there are neutrons and protons. Protons carry a positive charge, and neutrons are electrically neutral. This is as far as most high school physics classes go. Now, let’s dig a little deeper.</p>
+
+    <p><h4>The Smallest Thing Might Not Be Inside Atoms</h4></p>
+
+    <p>First, the smallest thing doesn’t have to be inside the atom. It can float freely in space. Some elementary particles exist inside atoms, and others don’t. But whether they’re inside atoms or not doesn’t really matter—because they may still have the same structure.</p>
+
+    <p>Scientists divide elementary particles into two categories: fermions and bosons. Fermions are the particles that “make up matter”—they form the stuff in the universe. Bosons, on the other hand, are particles that carry the forces that matter experiences. This may be a bit hard to grasp at first. After all, how can something exist and not make up matter? Well, it can. Have you ever heard of magnetic fields or light? Of course you have. They carry energy, yes—but they’re not matter.</p>
+
+    <figure>
+        <img src="small_light.jpg" alt="Dark Matter Simulation" loading="lazy" />
+        <figcaption>Photo of a lamp, emiting photons.</figcaption>
+    </figure>
+
+   
+    <p><h4>Fermions</h4></p>
+
+    <p>Fermions are also divided into two categories: quarks and leptons. The main difference between them is that quarks interact with all four fundamental forces—strong nuclear, weak nuclear, gravitational, and electromagnetic. Leptons, on the other hand, are affected by all except the strong nuclear force.</p>
+
+    <p>A good example of a lepton is the electron. Since leptons ignore the strong force, electrons don’t bind to protons through it. Protons, in contrast—like neutrons—are made up of quarks.</p>
+
+    <p>There are six types of quarks: up, down, strange, charm, bottom, and top. Interesting names, right? If only there were two more directions to complete the set...</p>
+
+    <p>There are also six leptons: three charged ones—electron, muon, and tau—and their neutral counterparts: the electron neutrino, muon neutrino, and tau neutrino. The main difference is that neutrinos have no electric charge at all, while the others do.</p>
+
+    <p><h4>Antimatter</h4></p>
+
+    <p>All these particles also have antimatter versions. For example, there’s an anti-tau neutrino and an anti-electron (which is also called a positron). It sounds cool to put “anti” in front of words, like they’re the tough or edgy —but the only real difference is in their charge.</p>
+
+    <p>An electron has a -1 charge; a positron has a +1 charge. This matters (no pun intended), because a particle’s charge affects how it behaves and interacts with other particles. So even though a positron and an electron have the same mass, they don’t behave the same way.</p>
+
+    <figure>
+        <img class="special_image" src="small_em.png" alt="Dark Matter Simulation" loading="lazy" />
+        <figcaption>Summary of all the elementary particles.</figcaption>
+    </figure>
+   
+    <p><h4>Bosons</h4></p>
+
+    <p>Now for the other team: bosons. These carry the fundamental forces—except for the Higgs boson, which we’ll get to in a moment.</p>
+
+    <p>Bosons include:</br>
+
+    Photons, which carry the electromagnetic force,</br>
+
+    Gluons, which carry the strong nuclear force,</br>
+
+    W and Z bosons, which carry the weak nuclear force, and</br>
+
+    (theoretical) gravitons, which are proposed to carry gravity.</p>
+
+    <p>The Higgs boson, however, isn’t a force carrier like the rest. It’s tied to something much bigger: the Higgs field. This field is what gives mass to other particles. Yeah, mass! Don't confuse mass with weight. Weight is just the force of gravity acting on mass. Mass is more like a kind of energy (remember Einstein’s E = mc²?).</p>
+
+    <p>The Higgs boson is the particle form of the Higgs field. For decades, it was purely theoretical—until 2012, when researchers at CERN finally observed it. In 2013, François Englert and Peter Higgs were awarded the Nobel Prize for predicting its existence.</p>
+
+    <figure>
+        <img src="small_galax.jpg" alt="Dark Matter Simulation" loading="lazy" />
+        <figcaption>Photo of a galaxy.</figcaption>
+    </figure>
+   
+    <p><h4>Zero-Dimensional Particles</h4></p>
+
+    <p>Now, let’s get weird.</p>
+
+    <p>All elementary particles—fermions and bosons alike—are considered zero-dimensional. What does that mean?</p>
+
+    <p>It means they don’t have volume. According to current math, they’re just single points in space. That’s tough to imagine—because anything you try to picture in your mind will have some size. But these don’t.</p>
+
+    <p>This creates a problem known as the point-particle problem. A particle with no volume, yet with energy, creates infinite energy densities, which doesn’t make sense in physics. This is one of the major unsolved issues in the field.</p>
+
+    <p>That’s where string theory comes in. Initially proposed by Gabriele Veneziano, string theory suggests that instead of being zero-dimensional points, these particles are actually one-dimensional strings. Their difference in vibration is what creates different particles. They have length, but no thickness. That tiny bit of dimension allows them to have volume—solving the infinite energy density issue. But again, this is only a theory. We have no solid proof (yet).</p>
+
+    <p><h4>So, What’s the Smallest Thing?</h4></p>
+
+    <p>If we're talking about volume, then elementary particles—being zero-dimensional—are the smallest things we know. But if we define “smallest” in terms of mass, then particles like photons and gluons, which have zero mass, could take that title.</p>
+
+    </div>
+  </main>
+
+  <section class="more-articles">
+    <h2>More Articles You Might Like</h2>
+    <div class="card">
+      <a href="free-will.html">Is There Free Will?</a>
+      <p>Are you going to choose to read this article, or is it already decided? Learn about a new way to understand life.</p>
+    </div>
+    <div class="card">
+      <a href="evolution.html">What is Evolution?</a>
+      <p>You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</p>
+    </div>
+    <div class="card">
+      <a href="gender.html">How Many Sexes Are There?</a>
+      <p>You dont know the answer? Here is a scientific and sociological explanation to help you make up your mind.</p>
+    </div>
+  </section>
+
+
+  <footer>
+    &copy; 2025 ALGERNON By Tuagri
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeToggle = document.getElementById("theme-toggle");
+      const darkClass = "dark-theme";
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.remove(darkClass);
+        themeToggle.textContent = "Dark Mode";
+      } else {
+        document.body.classList.add(darkClass);
+        themeToggle.textContent = "Light Mode";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.contains(darkClass);
+        document.body.classList.toggle(darkClass, !isDark);
+        themeToggle.textContent = isDark ? "Dark Mode" : "Light Mode";
+        localStorage.setItem("theme", isDark ? "light" : "dark");
+      });
+    });
+
+    // Hamburger menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-nav").classList.toggle("active");
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        document.getElementById("mobile-nav").classList.remove("active");
+      }
+    });
+
+
+  </script>
+</body>
+</html>

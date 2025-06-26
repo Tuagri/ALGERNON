@@ -121,7 +121,7 @@ h2, h3 {
 
 .hero-content {
   background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
+  padding:0.8rem 2rem;
   margin: auto;
   max-width: 1200px;
   width: 100%;
@@ -355,7 +355,7 @@ footer {
   }
 
   .hero-content {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .article, .featured-card {

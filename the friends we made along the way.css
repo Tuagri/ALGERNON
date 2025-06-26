@@ -11,6 +11,17 @@
       max-width: 300px;
       width: 100%;
     }
+
+    .featured-card,
+    .article-card,
+    .article {
+      display: flex;
+      flex-direction: column; /* stack vertically */
+      justify-content: space-between; /* push content apart */
+      height: 100%; /* allow full height in grid */
+    }
+
+
     .section-divider {
       height: 20px;
       background-color: black;
@@ -102,7 +113,7 @@ h2, h3 {
 /* ========== Hero Section ========== */
 .hero {
   background: url("texture2.jpg") center/cover no-repeat;
-  padding: 9rem 2rem 3rem;
+  padding: 9rem 3rem 3rem;
   text-align: center;
   position: relative;
   color: white;
@@ -134,7 +145,7 @@ h2, h3 {
 
 
 /* ========== Cards ========== */
-.article, .article-card, .featured-card {
+.article,.featured-card {
   background: black;
   border-radius: 12px;
   padding: 1.5rem;
@@ -145,7 +156,6 @@ h2, h3 {
   max-width: 20rem;
 }
 
-.article-card,
 .featured-card {
   display: flex;
   flex-direction: column;
@@ -154,29 +164,77 @@ h2, h3 {
 }
 
 
-.featured-card p{
-  padding-top: 0.5rem;
-}
-
-
 .article {
   max-width: 35rem;
 }
 
+    .article-listing-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .article-card {
+      background: black;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
+      max-width: 20rem;
+    }
+
+    .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px #000;
+    }
+
+    .article-card img {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+      object-fit: cover;
+      padding-bottom: 1rem;
+    }
+
+    .article-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.7rem;
+      color: #26A69A;
+      display: block;
+      text-decoration: none;
+    }
+
+    .article-title:hover,
+    .article-title:focus {
+      text-decoration: underline;
+    }
+
+    .article-summary {
+      font-family: 'Inter', sans-serif;
+      padding-top: 0.5rem;
+      color: #ccc;
+      font-size: 1rem;
+    }
+
 .article:hover,
-.article-card:hover,
 .featured-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px #000;
 }
 
-.article-card img,
 .featured-card img {
   width: 100%;
   height: 200px;
   aspect-ratio: 16 / 9; /* Or 4 / 3, depending on your desired shape */
   border-radius: 8px;
   object-fit: cover;
+  padding-bottom: 1rem;
 }
 
 .article-title{
@@ -200,7 +258,6 @@ h2, h3 {
 
 /* ========== Grids ========== */
 .article-list,
-.recent-section,
 .popular-section {
   display: flex;
   flex-wrap: wrap;
@@ -208,13 +265,6 @@ h2, h3 {
   justify-content: center;
 }
 
-.recent-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: stretch; /* Important */
-}
 
 
 .explore-section {
@@ -256,8 +306,14 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-items: center;
-    margin-top: 3rem;
   }
+
+  .hero-grid,
+  .explore-section,
+  .article-listing-section{
+    height: 100%;
+  }
+
 
 
 /* ========== Responsive Adjustments ========== */
@@ -302,7 +358,7 @@ footer {
     padding: 1rem;
   }
 
-  .article, .article-card, .featured-card {
+  .article, .featured-card {
     max-width: 100%;
   }
 

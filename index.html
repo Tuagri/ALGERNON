@@ -32,6 +32,23 @@
     document.body.classList.add('loaded');
   });
 
+  window.addEventListener('load', () => {
+    const cards = document.querySelectorAll('.featured-card, .article-card, .article');
+    let maxHeight = 0;
+
+    cards.forEach(card => {
+      card.style.height = 'auto'; // reset height
+      if (card.offsetHeight > maxHeight) {
+        maxHeight = card.offsetHeight;
+      }
+    });
+
+    cards.forEach(card => {
+      card.style.height = maxHeight + 'px';
+    });
+  });
+
+
 </script>
 
 
@@ -138,35 +155,36 @@
   <!-- Most Recent Articles Section -->
   <section id="recent-articles">
     <h3 class="recent-heading">Recent Articles</h3>
-    <div class="article-list recent-section">
 
-    <a href="god.html" style="text-decoration: none; color: inherit;">
-    <div class="featured-card">
-      <img src="god_cover.png" alt="Theism">
-        <p class="article-title">Are There Reasons Not to Believe in God?</p>
+    <section class="article-listing-section">
+
+      <a href="free-will.html" style="text-decoration: none; color: inherit;">
+      <div class="article-card">
+        <img src="fw_cover.png" alt="Brain visualization" loading="lazy">
+        <p class="article-title">Is there Free Will?</p>
+        <div class="article-summary">Are you going to choose to read this article, or is it already decided? Learn about a new way to understand life.</div>
+      </div>
+      </a>
+
+      <a href="small.html" style="text-decoration: none; color: inherit;">
+      <div class="article-card">
+        <img src="small_cover.png" alt="Smallest Thing" loading="lazy">
+        <p class="article-title">Smallest Matter Ever</p>
+        <div class="article-summary">You’ve heard of atoms—maybe even electrons or neutrinos. But is that where it ends? Do things get even smaller?</div>
+      </div>
+      </a>
+
+      <a href="god.html" style="text-decoration: none; color: inherit;">
+      <div class="article-card">
+        <img src="god_cover.png" alt="Theism" loading="lazy">
+        <p class="article-title" href="god.html">Are There Reasons Not to Believe in God?</p>
         <div class="article-summary">Yes, there are some. Learn about arguments against theism.</div>
-    </div>
-    </a>
-
-    <a href="small.html" style="text-decoration: none; color: inherit;">
-      <div class="article-card">
-        <img src="small_cover.png" alt="Neural Lace">
-          <p class="article-title">How Small Can Things Get?</p>
-          <div class="article-summary">You’ve heard of atoms—maybe even electrons or neutrinos. But is that where it ends, do things get even smaller?</div>
       </div>
-    </a>
-
-
-    <a href="free-will.html" style="text-decoration: none; color: inherit;">
-      <div class="article-card">
-        <img src="fw_cover.png" alt="AI Diagnosis">
-          <p class="article-title">Is there Free Will?</p>
-          <div class="article-summary">Are you going to choose to read this article, or is it already decided? Learn about a new way to understand life and everything happening around you. </div>
-      </div>
-    </a>
+      </a>
 
 
     </div>
+      </section>
   </section>
 
   <div class="section-divider"></div>

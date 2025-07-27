@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+          <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3DRVQQ880"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3DRVQQ880');
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  
+  <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consciousness | ALGERNON</title>
+  <script src="tf.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap');
+
+    :root {
+      --bg: #f5f5f5;
+      --text: #222;
+      --card-bg: #ffffff;
+      --meta: #666;
+      --accent: #00796b;
+      --header-bg: #ffffff;
+      --deneme: white;
+      --footer-bg: #ececec;
+    }
+
+    body.dark-theme {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --card-bg: #1f1f1f;
+      --meta: #aaa;
+      --accent: #26A69A;
+      --deneme: black;
+      --header-bg: #000;
+      --footer-bg: #0f0f0f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+      visibility: hidden;
+    }
+  
+
+
+    header {
+    background: var(--header-bg);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0.1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-content h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .logo {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+    nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--accent);
+  }
+
+    #theme-toggle {
+      background-color: var(--accent);
+      color: var(--deneme);
+      border: none;
+      padding: 0.5rem;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    #theme-toggle:hover {
+      background-color: #0b6057;
+      transform: scale(1.05);
+    }
+
+    .hero-banner {
+      background: linear-gradient(to right, #004d45, #002d27);
+      color: white;
+      text-align: center;
+      padding: 9rem 0 3rem;
+    }
+
+    .hero-banner h1 {
+      font-size: 2.8rem;
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    body, p{
+      font-family: 'Inter', sans-serif;
+    }
+
+
+    main.article-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 4rem 12rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .article-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .article-intro p{
+      padding: 0 10% 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .article-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .article-summary {
+      font-size: 1.2rem;
+      color: var(--meta);
+      margin-bottom: 2rem;
+    }
+
+    .article-meta {
+      font-size: 0.95rem;
+      color: var(--meta);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-body {
+      font-size: 1.1rem;
+      text-align: justify;
+      max-width: 90ch;
+      margin: 0 auto;
+    }
+
+    .article-body p {
+      margin-bottom: 1.6rem;
+      text-align: justify;
+    }
+
+    .article-body figure {
+      margin: 3rem auto;
+      text-align: center;
+    }
+
+    .special_image{
+      height: 40rem !important;
+    }
+
+    .article-body img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+    }
+
+
+    .article-body figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--meta);
+      font-style: italic;
+    }
+
+    .more-articles {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 3rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .more-articles h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .more-articles .card {
+      margin-bottom: 2rem;
+    }
+
+    .more-articles .card a {
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .more-articles .card a:hover {
+      text-decoration: underline;
+    }
+
+    .more-articles .card p {
+      color: var(--meta);
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: var(--meta);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero-banner h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      nav a, #theme-toggle {
+        font-size: 0.9rem;
+      }
+
+      main.article-container, .more-articles {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+    }
+
+    body.loaded {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    /* Mobile Nav Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+  button {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    padding: 0.4rem;
+  }
+
+  .resources {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    text-decoration: underline;
+    }
+
+    .resources:hover{
+    color: #26A69A;
+    }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--card-bg);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--meta);
+    gap: 1rem;
+    z-index: 1001;
+  }
+
+  nav.active {
+    display: flex;
+    animation: fadeInDown 0.3s ease forwards;
+  }
+
+  nav a, #theme-toggle {
+    font-size: 1.1rem;
+    padding: 0.4rem 0;
+    padding-left: 1rem;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    border-bottom: 1px solid var(--footer-bg);
+  }
+
+  nav a:last-child,
+  #theme-toggle:last-child {
+    border-bottom: none;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">ALGERNON</a>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#explore-topics">Explore</a>
+        <a href="index.html#recent-articles">Recent</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="contacto">Contact</a>
+      <button id="theme-toggle">Light Mode</button>
+    </nav>
+  </header>
+
+ <section class="hero-banner">
+    <h1>On Consciousness: Theories and Perspectives</h1>
+  </section>
+
+  <main class="article-container">
+    <div class="article-intro">
+      <h2 class="article-title">What Creates Consciousness?</h2>
+      <p class="article-summary">It's easy to take it for granted. Evolution created something that is a mystery to its own product. Here is a short summary of what we know so far about it.</p>
+
+    </div>
+    <div class="article-meta">Published July 27, 2025</div>
+    <div class="article-body">
+
+      <figure>
+        <img src="cons_mri.jpg" alt="Memories" loading="lazy" />
+      </figure>
+
+<p>Like many terms in neuroscience, consciousness is a vague concept that is difficult to define. It should be something we know the most about, because after all, consciousness is what we are. </p>
+
+<p>It's challenging to explain what it is, and we also can't tell what causes it. Further, we can hardly even spot it. A remark I've heard from Sam Harris, a neuroscientist and philosopher, is that our experiences are the only proof that consciousness exists. There is nothing in the human brain we can look at and say, this thing can think, at least for now. This is also called the first-person problem in philosophy. The idea struck me as a powerful perspective because it perfectly emphasizes the distinction between looking at a conscious structure from the outside and being one. </p>
+
+<p>So, in this article, we dare to ask the question: how come the brain has experiences, can be aware of surroundings, have a feeling of self, and to what extent that feeling of self is justified? Like every other really interesting topic in science (say it with me) we don’t know the answer, yet. But we have <em>theories</em>. </p>
+
+<p> <h4>The Hard and the Easy Problem</h4></p>
+
+<p>Before addressing the theories that attempt to explain consciousness, we need to explain the problem further. When talking about consciousness scientifically, a distinction can be made: the hard problem and the easy problem. The concept was first famously suggested by David Chalmers in the 1990s in his paper titled “<a href="https://academic.oup.com/book/6996/chapter-abstract/151305365?redirectedFrom=fulltext" target="_blank" class="resources">Facing Up to the Problem of Consciousness</a>.”</p>
+
+<p>The easy problem asks how the brain creates cognitive skills like attention, awareness, reasoning, etc. The name is given not because explaining these is really easy (they most certainly are not), but because they seem easy relative to the hard problem, which asks: why do we even experience consciousness in the first place? </p>
+
+<p>Living didn’t have to be an experience. We could have been like rocks that fall from mountains: with no capability to understand what’s going on. We could just live and move forward in time. Or, we could be like a bacterium, move only with instinct and not feel like we are making decisions.</p>
+
+      <figure>
+        <img src="cons_mind.jpg" alt="Memories" loading="lazy" />
+      </figure>
+
+<p> <h4>Panpsychism</h4></p>
+
+<p>I want to point out that whether rocks or bacteria are conscious is a debated topic. If you haven’t heard about panpsychism, you may need to sit down and take a deep breath.</p>
+
+<p>Panpsychism suggests that everything, to some extent, has consciousness, from neutrinos to rocks. As magical as it might sound, it has attractive arguments. It provides an alternative explanation to the hard problem by suggesting nothing emerges in the brain; rather, consciousness becomes gradually more dominant throughout evolution and is built into matter.</p>
+
+<p>If it sounds too mystical to you, think about consciousness as communication. Communication has gradually evolved over time and can be seen in every part of nature, from bees dancing to show each other the way, to ants leaving trails to communicate where there’s food. It is such a vague term that it’s hard to draw the line where communication starts forming in our past. Does a rock hitting another rock communicate? What about two cells exchanging proteins to signal each other? If you want to say no to the first and yes to the second because cells are “living,” I want to ruin your day and introduce you to the idea that “living” is also a made-up term. Thus, we can stretch the definition and say everything has a way of communicating.</p>
+
+<p>It’s possible to do the same with consciousness and raise the bar to the moon. It’s valid to be skeptical about it, as it doesn’t have any scientific reliability. However, it does answer some questions. If you want to learn more about it, there’s a detailed audio documentary created by 
+Annaka Harris called “<a href="https://annakaharris.com/lights-on" target="_blank" class="resources">Lights On</a>.”</p>
+
+<p>But this is a metaphysical explanation for consciousness rather than a scientific one. Let’s go back to our safe place and think with proof.</p>
+
+<p> <h4>The Theories</h4></p>
+
+<p>There are numerous theories that have been suggested about how consciousness emerges and what it is. There are some very interesting ones such as theories relating consciousness to quantum computations in neurons (Orchestrated Objective Reduction), and another that puts forward the idea that consciousness is created by electromagnetic field patterns in the brain (Electromagnetic Field Theory). But we’re going to focus on the four most dominant ones.</p>
+
+<p> <h4>Integrated Information Theory (IIT) </h4></p>
+
+<p>This theory overlaps the most with panpsychism. It suggests that information is in every part of the brain, and the level of its integration is what creates consciousness. The unification of this information in the brain is what differentiates us from particles. The amount of information contained is different. It also puts forward a mathematical explanation and defines the amount of information held with the letter Φ (phi). This is valuable because it’s possible to do calculations and mathematical analysis on the theorem. But because it also suggests that information is integrated into matter, it’s difficult to prove scientifically.</p>
+
+<p>One observation that supports this theory is the change in <a href="https://pubmed.ncbi.nlm.nih.gov/23946194" target="_blank" class="resources">EEG patterns</a> in patients under anesthesia: they are less “complex,” meaning they have lower integrated information. This correlates with the visible expression of consciousness, which is low. This is not the strongest evidence, but it definitely supports the theory.</p>
+
+      <figure>
+        <img src="cons_think.jpg" alt="Memories" loading="lazy" />
+      </figure>
+
+<p> <h4> High Order Theory (HOT) </h4></p>
+
+<p>HOT says that consciousness is created when we are aware that we are aware of something. The first round of awareness is called low-order representation. Being aware of a low-order representation is called a high-order representation. So, according to this theory, when you’re looking at a bottle, you’re not thinking of the bottle. Instead, you are becoming aware of the thought of the bottle.</p>
+
+<p>One idea that supports this theory is that in some instances, even though we are not consciously aware of what we see, it still <a href="https://pubmed.ncbi.nlm.nih.gov/8725963" target="_blank" class="resources">affects our behavior</a>. That implies that there is another level of mechanism in the brain that we are not conscious of. There can be multiple explanations for this, and HOT is one of them.</p>
+
+<p> <h4>  Global Workspace Theory (GWT) </h4></p>
+
+<p>GWT theorizes that an experience becomes conscious when it’s “broadcast” in the brain. Multiple parts of the brain receive the information through neural signaling at the same time. This theory also defines a “hub”-like part of the brain where the information is broadcasted, called the "global workspace.” This hub-like region is thought to be the frontal-parietal cortical region (the top part of your brain).</p>
+
+<p>MRI studies show that when a thought becomes conscious, different parts of the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6842945" target="_blank" class="resources">brain become active</a>. This is evidence that strengthens the theory but, like the others, the evidence could be stronger.</p>
+
+<p> <h4>  Re-entry Theory </h4></p>
+
+<p>Re-entry is quite similar to GWT. Both require the information to travel to different parts of the brain. The difference is that this theory emphasizes the multiple forward-and-back actions of the signal. It’s not a one-way communication, but a two-way loop that happens continuously. Further, it doesn’t require a hub either. The loops can happen in any part of the brain independently.</p>
+
+<p>One piece of evidence for this is that people with damaged thalamus regions mostly go into a vegetative state and lose consciousness. The thalamus is the part of the brain that is crucial for ordering and sending information to other parts of the brain. Any information regarding smell, touch, or vision goes through the thalamus to reach the correct brain region. Re-entry theory would guess that damage to this region would decrease consciousness as the loops of information in the brain are broken which is exactly what happens. Further, thalamus stimulation  <a href="https://www.nature.com/articles/nature06041" target="_blank" class="resources">brings consciousness back</a> in some patients.</p> 
+
+<p> <h4>  The Elephant in the Room </h4></p>
+
+<p>As we’ve mentioned, there are so many other theories that try to explain consciousness. We don’t have enough strong evidence to take a side, but I’m hopeful that we’ll soon figure this out. After we solve the mystery, there may be some important implications. Even though we may be decades away from this advancement, one of the most apparent applications is AI. Figuring out how consciousness is created is a big step toward replicating it. If we succeed, the discussion about the ethical aspects of this is inevitable and, if I may, totally mesmerizing to think about.</p>
+
+<p> <h4>In Summary </h4></p>
+
+<p>This article was an introduction to consciousness. Compared to other scientific aspects of neuroscience that are relatively new, a topic that also interests philosophy definitely brings centuries of accumulated ideas into the picture and makes the discussion richer than most. So far, we’ve discussed the approaches people take when starting to think about consciousness, but the reasons behind these approaches are definitely worth hearing about as well. So, if this topic interests you, I recommend you take a look at the other side of the iceberg.</p>
+
+      <figure>
+        <img src="cons_books.jpg" alt="Memories" loading="lazy" />
+      </figure>
+
+    </div>
+  </main>
+
+  <section class="more-articles">
+    <h2>More Articles You Might Like</h2>
+    <div class="card">
+      <a href="god.html">Are There Reasons Not to Believe in God?</a>
+      <p>There are some arguments that can be made against theism. See if you agree with them!</p>
+    </div>
+    <div class="card">
+      <a href="evolution.html">What is Evolution?</a>
+      <p>You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</p>
+    </div>
+    <div class="card">
+      <a href="gender.html">How Many Sexes Are There?</a>
+      <p>You dont know the answer? Here is a scientific and sociological explanation to help you make up your mind.</p>
+    </div>
+  </section>
+
+
+  <footer>
+    &copy; 2025 ALGERNON By Tuagri
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeToggle = document.getElementById("theme-toggle");
+      const darkClass = "dark-theme";
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.remove(darkClass);
+        themeToggle.textContent = "Dark Mode";
+      } else {
+        document.body.classList.add(darkClass);
+        themeToggle.textContent = "Light Mode";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.contains(darkClass);
+        document.body.classList.toggle(darkClass, !isDark);
+        themeToggle.textContent = isDark ? "Dark Mode" : "Light Mode";
+        localStorage.setItem("theme", isDark ? "light" : "dark");
+      });
+    });
+
+    // Hamburger menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-nav").classList.toggle("active");
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        document.getElementById("mobile-nav").classList.remove("active");
+      }
+    });
+
+
+  </script>
+</body>
+</html>

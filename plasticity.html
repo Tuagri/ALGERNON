@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+          <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3DRVQQ880"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3DRVQQ880');
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  
+  <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consciousness | ALGERNON</title>
+  <script src="tf.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap');
+
+    :root {
+      --bg: #f5f5f5;
+      --text: #222;
+      --card-bg: #ffffff;
+      --meta: #666;
+      --accent: #00796b;
+      --header-bg: #ffffff;
+      --deneme: white;
+      --footer-bg: #ececec;
+    }
+
+    body.dark-theme {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --card-bg: #1f1f1f;
+      --meta: #aaa;
+      --accent: #26A69A;
+      --deneme: black;
+      --header-bg: #000;
+      --footer-bg: #0f0f0f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+      visibility: hidden;
+    }
+  
+
+
+    header {
+    background: var(--header-bg);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0.1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-content h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .logo {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+    nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--accent);
+  }
+
+    #theme-toggle {
+      background-color: var(--accent);
+      color: var(--deneme);
+      border: none;
+      padding: 0.5rem;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    #theme-toggle:hover {
+      background-color: #0b6057;
+      transform: scale(1.05);
+    }
+
+    .hero-banner {
+      background: linear-gradient(to right, #004d45, #002d27);
+      color: white;
+      text-align: center;
+      padding: 9rem 0 3rem;
+    }
+
+    .hero-banner h1 {
+      font-size: 2.8rem;
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    body, p{
+      font-family: 'Inter', sans-serif;
+    }
+
+
+    main.article-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 4rem 12rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .article-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .article-intro p{
+      padding: 0 10% 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .article-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .article-summary {
+      font-size: 1.2rem;
+      color: var(--meta);
+      margin-bottom: 2rem;
+    }
+
+    .article-meta {
+      font-size: 0.95rem;
+      color: var(--meta);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-body {
+      font-size: 1.1rem;
+      text-align: justify;
+      max-width: 90ch;
+      margin: 0 auto;
+    }
+
+    .article-body p {
+      margin-bottom: 1.6rem;
+      text-align: justify;
+    }
+
+    .article-body figure {
+      margin: 3rem auto;
+      text-align: center;
+    }
+
+    .special_image{
+      height: 40rem !important;
+    }
+
+    .article-body img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+    }
+
+
+    .article-body figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--meta);
+      font-style: italic;
+    }
+
+    .more-articles {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 3rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .more-articles h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .more-articles .card {
+      margin-bottom: 2rem;
+    }
+
+    .more-articles .card a {
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .more-articles .card a:hover {
+      text-decoration: underline;
+    }
+
+    .more-articles .card p {
+      color: var(--meta);
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: var(--meta);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero-banner h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      nav a, #theme-toggle {
+        font-size: 0.9rem;
+      }
+
+      main.article-container, .more-articles {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+    }
+
+    body.loaded {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    /* Mobile Nav Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+  button {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    padding: 0.4rem;
+  }
+
+  .resources {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    text-decoration: underline;
+    }
+
+    .resources:hover{
+    color: #26A69A;
+    }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--card-bg);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--meta);
+    gap: 1rem;
+    z-index: 1001;
+  }
+
+  nav.active {
+    display: flex;
+    animation: fadeInDown 0.3s ease forwards;
+  }
+
+  nav a, #theme-toggle {
+    font-size: 1.1rem;
+    padding: 0.4rem 0;
+    padding-left: 1rem;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    border-bottom: 1px solid var(--footer-bg);
+  }
+
+  nav a:last-child,
+  #theme-toggle:last-child {
+    border-bottom: none;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">ALGERNON</a>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#explore-topics">Explore</a>
+        <a href="index.html#recent-articles">Recent</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="contacto">Contact</a>
+      <button id="theme-toggle">Light Mode</button>
+    </nav>
+  </header>
+
+ <section class="hero-banner">
+    <h1>Neuroscience Basics: Neuroplasticity</h1>
+  </section>
+
+  <main class="article-container">
+    <div class="article-intro">
+      <h2 class="article-title">Reshaping You</h2>
+      <p class="article-summary">The brain is probably more malleable than you think. It changes every second, and so do you. Here are some basics about neuroplasticity to help you understand yourself better!</p>
+
+    </div>
+    <div class="article-meta">Published Aug 9, 2025</div>
+    <div class="article-body">
+
+      <figure>
+        <img src="plast_img4.jpg" alt="Memories" loading="lazy" />
+      </figure>
+
+<p>In 1984, <a href="https://www.ncbi.nlm.nih.gov/search/research-news/15889/?utm_source=gquery&utm_medium=referral&utm_campaign=gquery-home" target="_blank" class="resources">Terry Wallis</a> had an accident that caused him to live in a minimally conscious state for 19 years. A minimally conscious state is different from a vegetative state or locked-in syndrome in the sense that the patient indicates some level of awareness. There are usually small but visible responses to yes-or-no questions, indications of emotional awareness, and reactions to <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1071686" target="_blank" class="resources">pain or noise</a>. However, the patient is not conscious enough to form conversations or move.</p>
+
+<p>The doctors predicted that Terry would stay in a minimally conscious state indefinitely. The brain was damaged to the extent that it was unrecoverable. Fortunately for Terry’s family, they were wrong. After 19 years, Terry showed indications of improvement. In the span of a week, he was able to speak, move, and recognize his then-20-year-old daughter.</p>
+
+<p>The reason for this change was not any medication or treatment. It was inside Terry. The doctors had overlooked a quite powerful ability of the brain itself. Apparently, his brain was improving and <a href="https://www.jci.org/articles/view/27021" target="_blank" class="resources">rewiring itself</a> for 19 years; the doctors just didn’t realize. This event happened at a time when the plasticity of the brain was recently becoming popular. Since then, it has been considered a fundamental property of the brain, where it’s recognized that every type of cognitive ability such as consciousness, memory, intelligence, reasoning, problem-solving, etc. is greatly linked to it.</p>
+
+<p>You may be thinking, what an incredibly powerful mechanism that could change how we see the world, only if we could find a way to understand and harness it and apply it to our everyday life successfully. I totally agree with you.</p>
+
+      <figure>
+        <img src="plast_img2.jpg" alt="Memories" loading="lazy" />
+      </figure>
+
+<p><h4>So How Does Neuroplasticity Work?</h4></p>
+
+<p>In short, neural plasticity is the functional or structural changes in the brain. Neurons, the cells in your nervous system, have arm-like structures called dendrites and synapses, and they are the real reason for these changes. They use these structures to send information to each other. One neuron forms average of <a href="https://bionumbers.hms.harvard.edu/bionumber.aspx?id=112055&s=n&v=3&utm_source=chatgpt.com" target="_blank" class="resources">7000 connections</a>. This number varies, but the important thing is that the neuron has the potential to connect to that many other neurons.</p>
+
+<p>Something scientists have realized in the past century is that these arms are quite flexible. They can stretch out to other cells, they can grow new arms, or they can retract the existing ones.</p>
+
+<p>The formation of new connections drastically affects cognitive abilities. The neuronal pathways in the brain are the place of creation for every cognitive ability you can think of. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4484970/?utm_source=chatgpt.com" target="_blank" class="resources">Memory formation</a> is due to changes in the structure of the neurons, <a href="https://www.jneurosci.org/content/28/22/5686?utm_source=chatgpt.com" target="_blank" class="resources">motor skills</a> are strengthened by it, and <a href="https://www.nature.com/articles/srep32328?utm_source=chatgpt.com" target="_blank" class="resources">intelligence</a> shows correlations (positive and negative) with the strength of the neural network. Your brain is mostly defined by the connections between neurons, and the fact that these connections can change shows how malleable you are.</p>
+
+<p><h4>The Science of it All</h4></p>
+
+<p>Because plasticity has an inclusive definition (any structural or functional change), the mechanisms that cause it are also various. One of these definitions includes the change in the synapse. The strengthening or weakening of these synapses helps reshape the neural networks that help your brain function. Memory formation is an example of the effect these changes have on you.</p>
+
+<p>Another way is to change the neurons structurally. The length and the connections between their arms (dendrites or axons) further affect cognition. You can think of it as a billiard ball hitting another billiard ball. Along with the force the ball applies to the other, the number of balls it hits is also important. If it hits three balls at the same time, then the outcome will be drastically different than if it hits a single ball. This kind of plasticity is the number of balls a neuron hits.</p>
+
+<p>Along with these two main changes that happen in the brain, there can also be mechanisms that affect the speed of the signal or the excitability of the neuron. One major idea that is quite debated is neurogenesis. This is the process of making completely new neurons. It is a powerful type of plasticity but is argued to be quite scarce in the brain.</p>
+
+      <figure>
+        <img src="plast_img1.jpg" alt="Memories" loading="lazy" />
+      </figure>
+
+<p><h4>When Does It Happen, How Do We Trigger It?</h4></p>
+
+<p>Unlike the common belief, plasticity is not always a great thing. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5904792/?utm_source=chatgpt.com" target="_blank" class="resources">PTSD</a>, <a href="https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2020.00197/full?utm_source=chatgpt.com" target="_blank" class="resources">epilepsy</a>, or <a href="https://pubmed.ncbi.nlm.nih.gov/21277315" target="_blank" class="resources">addiction</a> are all caused by extreme changes in synaptic strength or functional change. This is the reason evolution created a brain that is not completely fluid and plastic.</p>
+
+<p>There are ways to trigger plasticity in a way that affects you mostly positively. Learning more facts or improving your skills is just science, after all. As boring as it may sound, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11186069/?utm_source=chatgpt.com" target="_blank" class="resources">repetition</a> is one of them. The more a neuron is triggered, the stronger its signals get. To trigger a neuron, you need to repeat the action or the fact over and over again. This is why practice makes perfect.</p>
+
+<p>Another trick is to use neurotransmitters as support. Increased stimulation of chemicals like dopamine and norepinephrine can also trigger synapse changes. You can listen to a <a href="https://www.pnas.org/doi/10.1073/pnas.1811878116" target="_blank" class="resources">happy song</a> to increase dopamine levels or study after a <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5928534/?utm_source=chatgpt.com" target="_blank" class="resources">quick run</a> to increase norepinephrine. Have you ever heard of <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5919946/?utm_source=chatgpt.com" target="_blank" class="resources">peripatetic teaching</a>? It is a teaching style that Aristotle basically patented, where the education happens on foot. The teacher explains the lecture while walking around because they believed it helped with learning. They were right!</p>
+
+<p><h4>Basically…</h4></p>
+
+<p>Neuroplasticity is a crucial feature of the brain that helps with forming everything about our personality. It is a reason for hope to improve further—not in generations but in our lifetimes. Whatever you are aspiring or struggling to do, this ability of the brain is insurance that you can probably do better.</p>
+
+      <figure>
+        <img src="plast_img3.jpg" alt="Memories" loading="lazy" />
+      </figure>
+
+    </div>
+  </main>
+
+  <section class="more-articles">
+    <h2>More Articles You Might Like</h2>
+    <div class="card">
+      <a href="Consciousness.html">On Consciousness: Theories and Perspectives</a>
+      <p>Consciousness is what defines our reality, and we don’t even know what it is. Take a peek into this mystery.</p>
+    </div>
+    <div class="card">
+      <a href="evolution.html">What is Evolution?</a>
+      <p>You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</p>
+    </div>
+    <div class="card">
+      <a href="funds.html">Funding Science: Complications</a>
+      <p>Science should remain pure and beneficial to society. Explore the causes of situations that damage its reputation.</p>
+    </div>
+  </section>
+
+
+  <footer>
+    &copy; 2025 ALGERNON By Tuagri
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeToggle = document.getElementById("theme-toggle");
+      const darkClass = "dark-theme";
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.remove(darkClass);
+        themeToggle.textContent = "Dark Mode";
+      } else {
+        document.body.classList.add(darkClass);
+        themeToggle.textContent = "Light Mode";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.contains(darkClass);
+        document.body.classList.toggle(darkClass, !isDark);
+        themeToggle.textContent = isDark ? "Dark Mode" : "Light Mode";
+        localStorage.setItem("theme", isDark ? "light" : "dark");
+      });
+    });
+
+    // Hamburger menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-nav").classList.toggle("active");
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        document.getElementById("mobile-nav").classList.remove("active");
+      }
+    });
+
+
+  </script>
+</body>
+</html>

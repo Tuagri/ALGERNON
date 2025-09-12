@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+          <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3DRVQQ880"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3DRVQQ880');
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  
+  <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Evolution of the Nervous System | ALGERNON</title>
+  <script src="tf.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap');
+
+    :root {
+      --bg: #f5f5f5;
+      --text: #222;
+      --card-bg: #ffffff;
+      --meta: #666;
+      --accent: #00796b;
+      --header-bg: #ffffff;
+      --deneme: white;
+      --footer-bg: #ececec;
+    }
+
+    body.dark-theme {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --card-bg: #1f1f1f;
+      --meta: #aaa;
+      --accent: #26A69A;
+      --deneme: black;
+      --header-bg: #000;
+      --footer-bg: #0f0f0f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+      visibility: hidden;
+    }
+  
+
+
+    header {
+    background: var(--header-bg);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0.1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-content h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .logo {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+    nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--accent);
+  }
+
+    #theme-toggle {
+      background-color: var(--accent);
+      color: var(--deneme);
+      border: none;
+      padding: 0.5rem;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    #theme-toggle:hover {
+      background-color: #0b6057;
+      transform: scale(1.05);
+    }
+
+    .hero-banner {
+      background: linear-gradient(to right, #004d45, #002d27);
+      color: white;
+      text-align: center;
+      padding: 9rem 0 3rem;
+    }
+
+    .hero-banner h1 {
+      font-size: 2.8rem;
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    body, p{
+      font-family: 'Inter', sans-serif;
+    }
+
+
+    main.article-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 4rem 12rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .article-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .article-intro p{
+      padding: 0 10% 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .article-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .article-summary {
+      font-size: 1.2rem;
+      color: var(--meta);
+      margin-bottom: 2rem;
+    }
+
+    .article-meta {
+      font-size: 0.95rem;
+      color: var(--meta);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-body {
+      font-size: 1.1rem;
+      text-align: justify;
+      max-width: 90ch;
+      margin: 0 auto;
+    }
+
+    .article-body p {
+      margin-bottom: 1.6rem;
+      text-align: justify;
+    }
+
+    .article-body figure {
+      margin: 3rem auto;
+      text-align: center;
+    }
+
+    .special_image{
+      height: 40rem !important;
+    }
+
+    .article-body img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+    }
+
+
+    .article-body figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--meta);
+      font-style: italic;
+    }
+
+    .more-articles {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 3rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .more-articles h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .more-articles .card {
+      margin-bottom: 2rem;
+    }
+
+    .more-articles .card a {
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .more-articles .card a:hover {
+      text-decoration: underline;
+    }
+
+    .more-articles .card p {
+      color: var(--meta);
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: var(--meta);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero-banner h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      nav a, #theme-toggle {
+        font-size: 0.9rem;
+      }
+
+      main.article-container, .more-articles {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+    }
+
+    body.loaded {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    /* Mobile Nav Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+  button {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    padding: 0.4rem;
+  }
+
+  .resources {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    text-decoration: underline;
+    }
+
+    .resources:hover{
+    color: #26A69A;
+    }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--card-bg);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--meta);
+    gap: 1rem;
+    z-index: 1001;
+  }
+
+  nav.active {
+    display: flex;
+    animation: fadeInDown 0.3s ease forwards;
+  }
+
+  nav a, #theme-toggle {
+    font-size: 1.1rem;
+    padding: 0.4rem 0;
+    padding-left: 1rem;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    border-bottom: 1px solid var(--footer-bg);
+  }
+
+  nav a:last-child,
+  #theme-toggle:last-child {
+    border-bottom: none;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">ALGERNON</a>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#explore-topics">Explore</a>
+        <a href="index.html#recent-articles">Recent</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="contacto">Contact</a>
+      <button id="theme-toggle">Light Mode</button>
+    </nav>
+  </header>
+
+ <section class="hero-banner">
+    <h1>The Evolution of the Nervous System</h1>
+  </section>
+
+  <main class="article-container">
+    <div class="article-intro">
+      <h2 class="article-title">How did you get here?</h2>
+      <p class="article-summary">The brain as we know it has abilities that are almost out of this world. Consciousness, memory, and problem-solving are abilities that exist solely to help us understand and react to our environment. The acquisition of these skills is a defining step in human evolution, and they are developed by the nervous system almost exclusively.</p>
+
+    </div>
+    <div class="article-meta">Published Sep 12, 2025</div>
+    <div class="article-body">
+
+      <figure>
+        <img src="evoofns_brain.jpg" alt="brain" loading="lazy" />
+      </figure>
+
+<p>
+      How neurons create such sophisticated experiences is not very well known so far. To understand how, there are a couple of techniques scientists can look into. Researching the current nervous system is one of them. The other is trying to observe its past. Looking into how and why the advancements occurred can help us understand the reason for current structures and their roles. This is similar to learning about the childhood or the era of a writer to understand their book better. In this case, the writer is evolution, and the book is neurons.
+    </p>
+
+    <p><h4>Defining the Nervous System</h4></p>
+
+    <p>
+      Everyone has an image of the nervous system in their mind. It most probably includes branching structures or the brain in general. Putting it into words is a lot trickier. In general, we accept that neurons are cells that <a href="https://www.ncbi.nlm.nih.gov/books/NBK441977/?utm_source" target="_blank" class="resources">send electrical signals to other sets of neurons</a> (not exclusively). When we are looking for the first neuron, this is the idea we are searching for.
+    </p>
+
+    <p><h4>Nothing Comes First</h4></p>
+
+    <p>
+      First, there were no neurons. Communication between cells was purely chemical. Sponges, for example, are animals that lack a nervous system. When they need to react to something, they do this using their normal cells or <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3890488/?utm_source" target="_blank" class="resources">synaptic proteins and ion channels that mimic neurons.</a> The chemicals trigger other chemicals in the body.
+ </p>
+      
+ <p>
+For example, when a sponge is disturbed, it triggers the cells around the water canals to contract by the diffusion of molecules into the cells. This shows that the kingdom Animalia doesn’t depend on the nervous system to exist.
+  </p>
+
+<p><h4>Nerve Nets</h4></p>
+
+<p>
+Then, we observe nerve nets being formed. These differ from the nervous system in the sense that they are spread out through the entire body. There are no clusters, like the brain in humans. They are far from being an organ. Phylum Cnidaria, including corals, jellyfish, and hydra, have these neural structures that resemble a web. It makes sense that so far we haven’t observed a single neuron in any of these animals. For neurons, <a href="https://pubmed.ncbi.nlm.nih.gov/26105595" target="_blank" class="resources">teamwork makes the dream work.</a> So what we expect to see is exactly a nerve net, because that is what would succeed more in the survival race. This raises the question of how the first neuron evolved and multiplied in the body. It probably <a href="https://www.ncbi.nlm.nih.gov/books/NBK207174/?utm_source" target="_blank" class="resources">originated from already existing cells,</a> but what steps did these cells go through to become an established nervous system? What other roles did these original cells have and how did they lose these roles? These are questions waiting to be answered.
+    </p>
+
+
+    <p><h4>Ganglia</h4></p>
+
+    <p>
+      The next step we observe is something we call "cephalization." Cephal means head, so we are basically talking about the “headalization” of the nervous system. This happens when neurons cluster together rather than being spread out. These clusters are also called ganglia. One benefit of ganglia is that they <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2040432/?utm_source" target="_blank" class="resources">create a faster response.</a> This is mostly due to neurons being able to communicate with each other more efficiently without waiting for signals to reach one another.
+</p>
+
+<p>
+      Also, cephalization creates a type of hierarchy, where now there is a center that controls the other neurons. This allows decision-making and creates space for memory and skills. Flatworms are an example of this. In their nervous system, the accumulation of neurons in a specific region (cerebral ganglia) is easily identifiable.
+    </p>
+
+    <p>
+      An interesting fun fact is that bilateral symmetry emerges with cephalization in nature. Bilateral symmetry means the organism can be divided into two pieces that are symmetric to each other. Humans have bilateral symmetry, along with most animals. This is why the Half Man Half Woman act can exist.
+    </p>
+
+    <p>
+      The reason these two things go hand in hand is that bilateral symmetry leads to a head and a bottom part. If a snake’s head wasn’t at the tip, it would be a lot harder for it to move, similar to other animals that live on all fours. It wouldn’t see what was in front of it and would be eaten or crash into things. If bilateral symmetry and direction of movement exist in the body (which is usually the case),
+      <a href="https://www.nature.com/articles/nrn.2015.15" target="_blank" class="resources">then cephalization is inevitable.</a>
+    </p>
+
+      <figure>
+        <img src="evoofns_flatworm.png" alt="flatworm" loading="lazy" />
+        <figcaption>A drawing of a flatworm, with a visible nervous system.</figcaption>
+      </figure>
+
+
+    <p><h4>Dorsal Nerve Cord</h4></p>
+    <p>
+      The next step in evolution is the development of the dorsal nerve cord. Dorsal means on the back, so dorsal nerve cord implies the thick rope of neurons running from your neck to your lower body parts, along with supporting cells and protective tissue. This later develops into the spinal cord in humans and some other animals. This is the common feature of all vertebrates and phylum Chordata. Even the word Chordata comes from the cord.
+    </p>
+
+    <p>
+      The thickening of this rope implies that communication between the body and the brain has strengthened. Thus, the brain becomes the single point of control that is aware of the whole body and has enough information to direct it properly.
+    </p>
+
+    <p>
+      Fun fact, before the evolution of the dorsal nerve cord, we observe ventral nerve cords. This implies that at some point, one of our nincompoop ancestors <a href="https://www.nature.com/articles/371026a0" target="_blank" class="resources">rolled over and started living upside down.</a>
+    </p>
+
+      <figure>
+        <img src="evoofns_pigeon.jpg" alt="pigeon" loading="lazy" />
+        <figcaption>An image of a pigeon. Even if they don’t look like it, their brain is more similar to ours than most.</figcaption>
+      </figure>
+
+    <p><h4>The Human Brain</h4></p>
+    <p>
+      Now let’s get into the part that you are probably most interested in. The human brain is not so different from other animals. The sections such as the hindbrain, midbrain, and forebrain all exist in most vertebrates. The difference lies in many debated concepts.
+    </p>
+
+    <p>
+      One example of this is that humans have one of the largest EQs. EQ refers to Encephalization Quotient, which is a way of comparing brain size to body size. Brain size across animals doesn’t increase with body size the way you’d expect. Our brains are quite large compared to our body size, which is thought to be one indication of intelligence.
+    </p>
+
+    <p>
+      Homo sapiens has the largest EQ across all species with an <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3207484" target="_blank" class="resources">EQ of 6.56. A blue whale, for example, has an EQ of 0.38.</a> The problem with this measurement is that we don’t know if the increase in body size is proportional to the increase in brain size. If the body can grow larger faster than the brain, EQ would lose its meaning. Maybe rather than brain size, blue whales close the gap by 
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4244864/?utm_source" target="_blank" class="resources">having more connections,</a> or maybe just a little more neurons are enough to direct a good portion of the body.
+    </p>
+    <p>
+      Still, EQ is good at showing that humans have a brain larger than average. Compared to other primates of similar size, our brains are much bigger, showing a strong correlation between cognitive abilities and brain size.
+    </p>
+    <p>
+      Further, we know that the prefrontal cortex of the human brain is larger. The neural connections in the brain can be argued to be more precise and valuable compared to other animals. Even though we don’t have the greatest number of neurons, the number of neurons we have in the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2776484" target="_blank" class="resources">frontal cortex is higher than in most animals.</a> This area is linked with human-pioneered cognitive abilities such as language, problem-solving, reasoning, and logic.
+    </p>
+    <p>
+      So, it’s not like we have the biggest brain or the greatest number of neurons. Our brain is just designed more efficiently and compatibly with its purpose.
+    </p>
+
+    <p><h4>Long Story Short</h4></p>
+    <p>
+      Your brain has been forming for  
+      <a href="https://www.scientificamerican.com/article/oldest-nervous-system-found-in-520-million-year-old-fossil1" target="_blank" class="resources">hundreds of thousands of years,</a> and this is an explanation of that timeline in 1,384 words. If we could dig deeper and learn about the trillions of small genetic changes that occurred to create the human brain, the environments where those changes happened, the probability of them occurring, the conditions required for them to persist, and the number of times they had to occur because the mutant died in an unfortunate way, we would have an unimaginable amount of important information.
+    </p>
+    <p>
+      These questions are crucial to understanding our own brain and how we perceive the world. Think about how helpful it would be if you could point to the exact genetic change that created or allowed consciousness.
+    </p>
+    <p>
+      Whether or not we know how we got here, it is still impressive. If the first sponge could be aware of what it was part of, I think it would be quite mesmerized.
+    </p>
+
+
+      <figure>
+        <img src="evoofns_neurons.jpg" alt="neurons" loading="lazy" />
+      </figure>
+
+    </div>
+  </main>
+
+  <section class="more-articles">
+    <h2>More Articles You Might Like</h2>
+    <div class="card">
+      <a href="plasticity.html">Neuroscience Basics: Neuroplasticity</a>
+      <p>By the time you finish reading this article, you’ll have a different brain. Learn just how mushy your brain really is!</p>
+    </div>
+    <div class="card">
+      <a href="Consciousness.html">On Consciousness: Theories and Perspectives</a>
+      <p>Consciousness is what defines our reality, and we don’t even know what it is. Take a peek into this mystery.</p>
+    </div>
+    <div class="card">
+      <a href="evolution.html">What is Evolution?</a>
+      <p>You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</p>
+    </div>
+  </section>
+
+
+  <footer>
+    &copy; 2025 ALGERNON By Tuagri
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeToggle = document.getElementById("theme-toggle");
+      const darkClass = "dark-theme";
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.remove(darkClass);
+        themeToggle.textContent = "Dark Mode";
+      } else {
+        document.body.classList.add(darkClass);
+        themeToggle.textContent = "Light Mode";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.contains(darkClass);
+        document.body.classList.toggle(darkClass, !isDark);
+        themeToggle.textContent = isDark ? "Dark Mode" : "Light Mode";
+        localStorage.setItem("theme", isDark ? "light" : "dark");
+      });
+    });
+
+    // Hamburger menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-nav").classList.toggle("active");
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        document.getElementById("mobile-nav").classList.remove("active");
+      }
+    });
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+          <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3DRVQQ880"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3DRVQQ880');
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  
+  <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Evolution of the Nervous System | ALGERNON</title>
+  <script src="tf.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap');
+
+    :root {
+      --bg: #f5f5f5;
+      --text: #222;
+      --card-bg: #ffffff;
+      --meta: #666;
+      --accent: #00796b;
+      --header-bg: #ffffff;
+      --deneme: white;
+      --footer-bg: #ececec;
+    }
+
+    body.dark-theme {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --card-bg: #1f1f1f;
+      --meta: #aaa;
+      --accent: #26A69A;
+      --deneme: black;
+      --header-bg: #000;
+      --footer-bg: #0f0f0f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+      visibility: hidden;
+    }
+  
+
+
+    header {
+    background: var(--header-bg);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0.1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-content h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .logo {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+    nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--accent);
+  }
+
+    #theme-toggle {
+      background-color: var(--accent);
+      color: var(--deneme);
+      border: none;
+      padding: 0.5rem;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    #theme-toggle:hover {
+      background-color: #0b6057;
+      transform: scale(1.05);
+    }
+
+    .hero-banner {
+      background: linear-gradient(to right, #004d45, #002d27);
+      color: white;
+      text-align: center;
+      padding: 9rem 0 3rem;
+    }
+
+    .hero-banner h1 {
+      font-size: 2.8rem;
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    body, p{
+      font-family: 'Inter', sans-serif;
+    }
+
+
+    main.article-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 4rem 12rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .article-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .article-intro p{
+      padding: 0 10% 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .article-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .article-summary {
+      font-size: 1.2rem;
+      color: var(--meta);
+      margin-bottom: 2rem;
+    }
+
+    .article-meta {
+      font-size: 0.95rem;
+      color: var(--meta);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-body {
+      font-size: 1.1rem;
+      text-align: justify;
+      max-width: 90ch;
+      margin: 0 auto;
+    }
+
+    .article-body p {
+      margin-bottom: 1.6rem;
+      text-align: justify;
+    }
+
+    .article-body figure {
+      margin: 1.5rem auto;
+      text-align: center;
+    }
+
+    .special_image{
+      height: 40rem !important;
+    }
+
+    .article-body img {
+      width: 90%;
+      height: 25%;
+      object-fit: cover;
+    }
+
+
+    .article-body figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--meta);
+      font-style: italic;
+    }
+
+    .more-articles {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 3rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .more-articles h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .more-articles .card {
+      margin-bottom: 2rem;
+    }
+
+    .more-articles .card a {
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .more-articles .card a:hover {
+      text-decoration: underline;
+    }
+
+    .more-articles .card p {
+      color: var(--meta);
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: var(--meta);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero-banner h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      nav a, #theme-toggle {
+        font-size: 0.9rem;
+      }
+
+      main.article-container, .more-articles {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+    }
+
+    body.loaded {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    /* Mobile Nav Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+  button {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    padding: 0.4rem;
+  }
+
+  .resources {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    text-decoration: underline;
+    }
+
+    .resources:hover{
+    color: #26A69A;
+    }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--card-bg);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--meta);
+    gap: 1rem;
+    z-index: 1001;
+  }
+
+  nav.active {
+    display: flex;
+    animation: fadeInDown 0.3s ease forwards;
+  }
+
+  nav a, #theme-toggle {
+    font-size: 1.1rem;
+    padding: 0.4rem 0;
+    padding-left: 1rem;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    border-bottom: 1px solid var(--footer-bg);
+  }
+
+  nav a:last-child,
+  #theme-toggle:last-child {
+    border-bottom: none;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">ALGERNON</a>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#explore-topics">Explore</a>
+        <a href="index.html#recent-articles">Recent</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="contacto">Contact</a>
+      <button id="theme-toggle">Light Mode</button>
+    </nav>
+  </header>
+
+ <section class="hero-banner">
+    <h1>Neural Microcircuits</h1>
+  </section>
+
+  <main class="article-container">
+    <div class="article-intro">
+      <h2 class="article-title">Basics of Neuroscience</h2>
+      <p class="article-summary">Underlying mechanisms for many brain functions emerge not only from the properties of neurons but also from their complex interactions with the environment. When neurons form connections in specific ways, these interactions form circuits, which represent the remarkable intelligence evolution can bring to the table.</p>
+    </div>
+    <div class="article-meta">Published Jan 1, 2026</div>
+    <div class="article-body">
+
+      <figure>
+        <img src="microcircuit1.jpg" alt="microcircuit" loading="lazy" />
+      </figure>
+
+<p>If there is one truth about neurons, it is the fact that they are malleable. A neuron can change how excitable it is (how likely it is to send a signal to the subsequent neuron), how many dendrites it has, or how many axons, etc. When a number of these neurons come together and form connections to relay a specific message that is processed in a particular way, we call this a neural circuit. These circuits define what the message becomes after being processed by several neurons. They are powerful tools for the brain because they change the meaning of the message quite efficiently. Thus, every sound you hear or the object you see doesn’t have the same effect in your brain. Sometimes, you realise some objects more readily (ie, what you focus on), whereas you don’t even hear some sounds (ie, the sound of the pendulum clock). </p>
+<p><h4>Feedforward Excitations</h4> </p>
+    <figure>
+        <img src="feedbackdivergenceconvergence.jpg" alt="microcircuit" loading="lazy" />
+           <figcaption>Figure 1. Feedback Excitation, Convergence, and Divergence</figcaption>
+    </figure>
+<p>Let’s start simple. <a href="https://www.science.org/doi/full/10.1126/science.abg7285" target="_blank" class="resources">Feedforward excitation</a> is just neurons exciting each other. Excitement happens when neuron A makes neuron B more likely to fire and send a signal to the following neuron, rather than the signal being lost in between. If the information needs to travel long distances within the body, this is necessary because the signal will have to jump from neuron to neuron. This is how information about hitting your little toe reaches the brain areas that signal pain. </p>
+<p><h4>Divergence and Convergence</h4></p>
+<p>Divergence is when a neuron makes connections to more than one neuron. The signal is amplified to signal multiple areas in the body. For example, one of the many simple reflexes you have, the <a href="https://www.sciencedirect.com/topics/neuroscience/flexor-reflex?" target="_blank" class="resources">flexion withdrawal reflex</a>, utilizes this circuit. The flexion withdrawal reflex is what you imagine when you think of a reflex. When you touch something hot, this is the reflex that makes you pull your arm. The signal travels from your arm to your spinal cord, which triggers two neural pathways. One goes to your extensor muscles and inhibits them (so you don’t extend your arm and pull it back), and the other goes into your flexor muscles and excites them (so you can contract your arm and pull it back). It sometimes excites the distal muscles (your hand if you burn your arm), so you can let go of whatever you are holding, making movement easier.</p>
+<p>Convergence occurs when multiple neurons send signals to fewer neurons. This way, the brain can ensure that the signal's existence is not random. Once in a while, a neuron can fire an action potential out of pure luck, without any real information to carry. To reduce the risk of this happening, multiple neurons can be used to verify that the information is genuine. Further, this way, the information can be minimized and controlled, so that the brain is not overwhelmed with new information. This kind of circuit is quite common in your eyes. You have around <a href="https://www.ncbi.nlm.nih.gov/books/NBK470227/" target="_blank" class="resources">100 million</a> cones and rods (the cells that detect color and light) in your eyes. This number is extreme compared to the 2 million ganglion cells (the cells that cones and rods send signals to through bipolar cells. Cones are specialized in color detection, whereas rods detect light (dark or not). For color detection, accuracy is crucial, since the brain can choose from a spectrum of colors. However, detecting light can afford to sacrifice accuracy for greater sensitivity. Thus, in the eyes, we observe more convergent connections between rods to ganglion cells than between cones to <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2834589/?" target="_blank" class="resources">ganglion cells</a>. Because the brain needs more data from cones, whereas sensitivity is preferable in rods. </p>
+<p>There are also cases where convergence and divergence can be used together. The neurons can converge or diverge, or vice versa. Circuits can integrate inhibition, in which one neuron inhibits many neurons, or many neurons inhibit one.</p>
+<p><h4>Lateral Inhibition</h4></p>
+    <figure>
+        <img src="lateral_inhibition.jpg" alt="microcircuit" loading="lazy" />
+           <figcaption>Figure 2. Lateral Inhibition, pale color represents non-active synapses</figcaption>
+    </figure>
+<p>Lateral inhibitions are where the circuit gets fun. It is where evolution starts being clever. Look at the image below, and observe two layers of neurons. Neurons in layer one receive the signal and send it through the second layer. Every neuron excites the neuron just below it and inhibits the neuron diagonally to it (normally, inhibition and excitation occur through different neurons, but in the image, this is reduced to a single neuron for simplicity). When there is a stimulus for a set of neurons on layer one, layer two neurons get moderately excited because they are inhibited by two neurons. Except for the neurons that are at the edge, between a signal and no signal. One of them (Neuron A) is inhibited by only one neuron, rather than two, so its ability to send a signal is higher than that of the others.  Further, the neuron next to it (Neuron B) is not excited at all and is even inhibited, creating a deeper contrast between the two neurons. This is the circuit that detects edges in sensory information. When looking at the screen, your brain uses this to detect the difference between the screen and the background. When you dip your hand in cold water, your brain detects the line where the water ends more readily rather than getting a signal from your whole arm. Thus, with edge detection, your brain can focus on more important information and <a href="https://www.science.org/doi/full/10.1126/science.abg7285" target="_blank" class="resources">grasp objects</a>.</p>
+<p><h4>Feedback and Feedforward Inhibition</h4></p>
+    <figure>
+        <img src="feedbackfeedforward_inhibition (1).jpg" alt="microcircuit" loading="lazy" />
+           <figcaption>Figure 3. Feedback and Feedforward Inhibition</figcaption>
+    </figure>
+<p>Feedback inhibition differs from feedforward inhibition in several ways. One is that, in feedforward inhibition, the neuron receives no feedback for its own signalling. In Figure 3, feedback inhibition is shown. Red represents inhibitory neurons, whereas green represents excitatory neurons. Neuron 1B excites an inhibitory neuron 1C, which in turn inhibits neuron 1B. Thus, neuron 1C inhibits itself indirectly. This is called feedback inhibition, and it is especially crucial when the circuit wants the signal to be stable and under control. The feedback from neuron 1B, which comes with a delay, shuts down the signal without allowing excessive signal transduction.</p>
+<p>However, the shutdown does not always last long, which can, in turn, create a loop. As neuron 1B inhibits neuron 1C, neuron 1C doesn’t excite neuron 1B anymore, therefore causing neuron 1B to stop firing and stop inhibiting neuron 1C. After a while, the uninhibited neuron 1C resumes firing, restarting the loop. This creates a rhythmic activity that the brain can use to arrange timing. One example of this is the <a href="https://pubmed.ncbi.nlm.nih.gov/16149083/" target="_blank" class="resources">hippocampal theta rhythm</a>, which is generated by these circuits. These are oscillatory activities formed in a region of the brain called the hippocampus that occur and are associated with memory formation. These oscillations create a timeframe during which the brain can encode information for a short period, helping order the event chronologically.</p>
+<p>In Figure 3, a feedforward inhibition is also shown. Neuron 2A directly signals the inhibitory neuron 2B while signalling (sometimes) another neuron 2C. Because the inhibitory signal doesn’t depend on neuron 2C’s activity, this circuit does not create rhythmic activity. Instead, it is more for caution than anything else and prevents signals from building up. One example of a system that utilizes these circuits is the muscle tissue. Motor neurons that signal your muscles to contract are excitatory neurons, meaning they can only excite the muscle fibers (cause them to contract). Thus, they need an inhibitory signal to stop them from being excited (i.e., to relax your muscles). This means that whenever you are not moving a muscle, the motor neurons are constantly getting inhibitory signals to limit your movement. This is done through <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247%2822%2900570-8?" target="_blank" class="resources">feedforward inhibition</a>.</p><p><h4>Mutual Inhibition</h4></p>
+    <figure>
+        <img src="mututal_inhibition (1).jpg" alt="microcircuit" loading="lazy" />
+           <figcaption>Figure 4. Mutual Inhibition</figcaption>
+    </figure>
+<p>The final type of circuit is mutual inhibition, in which multiple neurons mutually inhibit one another. It is a silly-looking circuit that appears to have no purpose, yet it produces remarkably dynamic output. Depending on the properties of the neurons, i.e., the level of inhibition and the level of firing, the circuit's rhythm can change in different ways. Figure 4 shows four of these rhythms that can be formed in a quadruple neuron circuit in a step-like fashion.</p>
+<p>Every rhythm can be helpful in certain scenarios. For example, walk-like rhythms (Figure 4a) are used when the body needs precise rhythmic adjustments of muscles, such as during swallowing or peristalsis (the movement of your intestines). Trot (Figure 4b) can be used to create bilateral movement, such as walking, and Bound (Figure 4c) can be used to create high-strength muscle contraction. Whereas gallop (Figure 4d) is useful for producing high-speed, high-frequency movements, such as fast speech.</p>
+<p>The important takeaway from these types of circuits is that the meaning neurons create depends not only on the individual neuron but also on its interactions with the environment. The type of connections they form, whether they are inhibitory or excitatory, to what level they are inhibitory or excitatory, the length of the refractory period (the time it takes for a neuron to recharge and be able to send another signal), etc., all determine the end result.</p>
+<p>This is one of the reasons brain research is so excruciating. To understand the message it conveys, the context needs to be examined fully. However, the brain's context is so rich that only <a href="https://www.nature.com/articles/s41586-023-06812-z" target="_blank" class="resources">1 cubic centimeter</a> of it corresponds to more than <a href="https://news.harvard.edu/gazette/story/2011/08/brain-navigation/#:~:text=The%20brain%20of%20a%20mouse,more%20than%20a%20billion%20CDs" target="_blank" class="resources">a billion CDs'</a> worth of data.</p> 
+
+    </div>
+  </main>
+
+  <section class="more-articles">
+    <h2>More Articles You Might Like</h2>
+    <div class="card">
+      <a href="evoofns.html">The Evolution of the Nervous System</a>
+      <p>You did not begin at your birth. For hundreds of millions of years your nervous system has been evolving to create you. Learn about it!</p>
+    </div>
+    <div class="card">
+      <a href="Consciousness.html">On Consciousness: Theories and Perspectives</a>
+      <p>Consciousness is what defines our reality, and we don’t even know what it is. Take a peek into this mystery.</p>
+    </div>
+    <div class="card">
+      <a href="evolution.html">What is Evolution?</a>
+      <p>You’ll be surprised by the power of small changes. This is a brief dive into the idea that connects the past to the present.</p>
+    </div>
+  </section>
+
+
+  <footer>
+    &copy; 2025 ALGERNON By Tuagri
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeToggle = document.getElementById("theme-toggle");
+      const darkClass = "dark-theme";
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.remove(darkClass);
+        themeToggle.textContent = "Dark Mode";
+      } else {
+        document.body.classList.add(darkClass);
+        themeToggle.textContent = "Light Mode";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.contains(darkClass);
+        document.body.classList.toggle(darkClass, !isDark);
+        themeToggle.textContent = isDark ? "Dark Mode" : "Light Mode";
+        localStorage.setItem("theme", isDark ? "light" : "dark");
+      });
+    });
+
+    // Hamburger menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-nav").classList.toggle("active");
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        document.getElementById("mobile-nav").classList.remove("active");
+      }
+    });
+
+
+  </script>
+</body>
+</html>
